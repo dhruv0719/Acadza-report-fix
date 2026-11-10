@@ -1,0 +1,2626 @@
+[
+  {
+    "question_id": "60ca4feb6420652745f55522",
+    "qid": null,
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Physics",
+    "chapter": "Electrostatics",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "100 N",
+        "html_length": 5,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "121 N",
+        "html_length": 5,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "99 N",
+        "html_length": 4,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "None of these",
+        "html_length": 13,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "Two point charges repel each other with a force of 100 N. One of the charges is increased by 10% and the other is reduce",
+    "solution_text_preview": "100 = k q_1 q_2 / r^2 F = k ( 1.1 q_1 ) ( 0.9 q_2 ) / r^2 ⇒ (F / 100) = 0.99 ⇒ F = 99 N",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "09d73c898b3522b18ca4980741ace812d83daba537913cb74d278c483ea3c72e",
+    "raw_question_hash_after": "09d73c898b3522b18ca4980741ace812d83daba537913cb74d278c483ea3c72e",
+    "raw_solution_hash_before": "fc710b6eda88fc547209554f30bd5e16a46ca04c5535d26c6f26e552be5862a8",
+    "raw_solution_hash_after": "fc710b6eda88fc547209554f30bd5e16a46ca04c5535d26c6f26e552be5862a8",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 233,
+      "reconstructed_text_length": 233,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "C",
+    "normalized_answer": "C",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "68dea616d0cda73d07e93ae6",
+    "qid": "SecBQ22",
+    "question_type": "integerQuestion",
+    "sub_category": "integer_no_options",
+    "subject": "Physics",
+    "chapter": "Electrostatics",
+    "detected_option_markers": [],
+    "marker_types": [],
+    "extracted_options": [],
+    "stem_extraction_status": "integer_no_options",
+    "stem_text_preview": "The charges (q / 2) and 2 q are placed at the centre of face and corner of a cube respectively. Total flux through the c",
+    "solution_text_preview": "For centre of face ϕ_1 = (1 / 2) ((q / 2) / ε_0) = (q / 4 ε_0) For corner of a cube ϕ_2 = (1 / 8) (2 q / ε_0) = (q / 4 ε",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "e34a483a9c3a7ccbcbeeaf75990b932d4f2b0bbf9874ce3199b0d869198242e5",
+    "raw_question_hash_after": "e34a483a9c3a7ccbcbeeaf75990b932d4f2b0bbf9874ce3199b0d869198242e5",
+    "raw_solution_hash_before": "eaa8269d5c163efa910ea9412b9a49cd45d690e11e3be353971219575e0584a5",
+    "raw_solution_hash_after": "eaa8269d5c163efa910ea9412b9a49cd45d690e11e3be353971219575e0584a5",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 164,
+      "reconstructed_text_length": 164,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "2",
+    "normalized_answer": "2",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "68dea715387eea3d0d95f790",
+    "qid": "SecBQ24",
+    "question_type": "integerQuestion",
+    "sub_category": "integer_no_options",
+    "subject": "Physics",
+    "chapter": "Units and dimensions",
+    "detected_option_markers": [],
+    "marker_types": [],
+    "extracted_options": [],
+    "stem_extraction_status": "integer_no_options",
+    "stem_text_preview": "Each side of a cube is measured to be 7.203 m . If the total surface area of the cube considering the correct significan",
+    "solution_text_preview": "Total surface area = 6 ( 7.203 )^2 = 311.299 = 311.3 m^2",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "a06ca40ae2d39056ca4c81ee22ae704f80beb0b6c24fa3601e860a4a3b30af6e",
+    "raw_question_hash_after": "a06ca40ae2d39056ca4c81ee22ae704f80beb0b6c24fa3601e860a4a3b30af6e",
+    "raw_solution_hash_before": "d8a299f77da11a40e856f2c9fa330eb6d9302e493b0c65c0e22e3807fad6caf0",
+    "raw_solution_hash_after": "d8a299f77da11a40e856f2c9fa330eb6d9302e493b0c65c0e22e3807fad6caf0",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 172,
+      "reconstructed_text_length": 172,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "3113",
+    "normalized_answer": "3113",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "61ee6c9d90a1a968a168686b",
+    "qid": "j0LtWXE985",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Zoology",
+    "chapter": "Digestion and Absorption",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "Villi",
+        "html_length": 5,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "Peyer’s patches",
+        "html_length": 15,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "Rugae",
+        "html_length": 5,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "Choroid plexux",
+        "html_length": 14,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "Aggregates of lymphoid tissue present in the distal portion of the small intestine are known as",
+    "solution_text_preview": "In the wall of small intestine, lymphatic tissues are present called Peyer’s patches. These are groups of lymph nodules ",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": false,
+    "raw_question_hash_before": "dc3c8ef7be4ddb28a7f64a9fb62eb9b658500102b0b44820d5640b526c35437c",
+    "raw_question_hash_after": "dc3c8ef7be4ddb28a7f64a9fb62eb9b658500102b0b44820d5640b526c35437c",
+    "raw_solution_hash_before": "bed26e995a18b4333f1cd456411d6aad1a04d357a159f68e6f03f985c9d93be9",
+    "raw_solution_hash_after": "bed26e995a18b4333f1cd456411d6aad1a04d357a159f68e6f03f985c9d93be9",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 154,
+      "reconstructed_text_length": 154,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "B",
+    "normalized_answer": "B",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "68c9ae5afb6b2f16e2d43b1c",
+    "qid": "SecAQ23",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Physics",
+    "chapter": "Photoelectric effect and matter waves",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "3.1 V",
+        "html_length": 5,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "2.0 V",
+        "html_length": 5,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "5.1 V",
+        "html_length": 5,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "1.1 V",
+        "html_length": 5,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "Light of wavelength 4000 A ∘ falls on a metal surface having work function of 2.0 eV. What is the stopping potential?",
+    "solution_text_preview": "Energy of incident photon (h c / λ) = (12400 / λ) = (12400 / 4000) eV = 3.1eV k_m a x = hν - φ = 3.1eV - 2.0eV = 1.1eV H",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "76a31815efb7ded4b2efa0ef167a00b91bc2160e2e423b4126474b0d05ed2505",
+    "raw_question_hash_after": "76a31815efb7ded4b2efa0ef167a00b91bc2160e2e423b4126474b0d05ed2505",
+    "raw_solution_hash_before": "ee202acbaec7e70bb995ed8334d23c030dcfcd6235324db94611298283f76bb3",
+    "raw_solution_hash_after": "ee202acbaec7e70bb995ed8334d23c030dcfcd6235324db94611298283f76bb3",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 157,
+      "reconstructed_text_length": 157,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "D",
+    "normalized_answer": "D",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "68dea87d387eea3d0d95fbe3",
+    "qid": "SecAQ4",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Physics",
+    "chapter": "Electrostatics",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "5 V",
+        "html_length": 3,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "10 V",
+        "html_length": 4,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "15 V",
+        "html_length": 4,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "20 V",
+        "html_length": 4,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "A parallel plate capacitor is filled with a dielectric whose dielectric constant varies with the applied voltage as K = ",
+    "solution_text_preview": "Let the final potential drop across each capacitor is V . K C V + C V = C V_0 α C V^2 + C V = C V_0 ⇒ α V^2 + V − V_0 = ",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "5b56f73b553569d2836a6791c216a9a8cbb630336d343398f47b6d7de95ac317",
+    "raw_question_hash_after": "5b56f73b553569d2836a6791c216a9a8cbb630336d343398f47b6d7de95ac317",
+    "raw_solution_hash_before": "07c9c4cafffe3fcf651b5e7fc5baabdb28ad04efd27026b548f58d77c65d2419",
+    "raw_solution_hash_after": "07c9c4cafffe3fcf651b5e7fc5baabdb28ad04efd27026b548f58d77c65d2419",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 384,
+      "reconstructed_text_length": 384,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "A",
+    "normalized_answer": "A",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "696a866665252c04fc1f81c2",
+    "qid": "JEEMAINS_2025_PHY_L4838",
+    "question_type": "integerQuestion",
+    "sub_category": "integer_no_options",
+    "subject": "Physics",
+    "chapter": "Properties of matter and fluid mechanics",
+    "detected_option_markers": [],
+    "marker_types": [],
+    "extracted_options": [],
+    "stem_extraction_status": "integer_no_options",
+    "stem_text_preview": "The volume contraction of a solid copper cube, when subjected to a hydraulic pressure of 7 × 10^6 P a , would be _ _ _ _",
+    "solution_text_preview": "B = (Δ P / (Δ V / V)) Δ V = (7 × 10^6 / 1.4 × 10^11) × ( 10 × 10^− 2 )^3 Δ V = 50 m m^3",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "1f8ca4c733068299f2159878a489f36745805afc8924708936970d38ddbf89e8",
+    "raw_question_hash_after": "1f8ca4c733068299f2159878a489f36745805afc8924708936970d38ddbf89e8",
+    "raw_solution_hash_before": "6c2d7afb8e5fbbfdcf41fea57e1c4b9b2d4fdafc98ca7860f95e4db6a43dc28b",
+    "raw_solution_hash_after": "6c2d7afb8e5fbbfdcf41fea57e1c4b9b2d4fdafc98ca7860f95e4db6a43dc28b",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 182,
+      "reconstructed_text_length": 182,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "50",
+    "normalized_answer": "50",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "63c7cce12981ed154ee92c94",
+    "qid": "tTH86ZABzY",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Physics",
+    "chapter": "Geometrical optics and optical instruments",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "mathml_mo"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "1.1 μ A",
+        "html_length": 205,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "B",
+        "text": "11 μ A",
+        "html_length": 204,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "C",
+        "text": "2.2 μ A",
+        "html_length": 205,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "D",
+        "text": "0.22 μ A",
+        "html_length": 206,
+        "is_blank": false,
+        "has_mathml": true
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "A large parallel plate capacitor, whose plates have an area of 1 m^2 and are separated from each other by 1 mm , is bein",
+    "solution_text_preview": "C = k ε_0 (A / d) = 8.85 × 10^− 8 F i_d = (d / d t) ( C V ) = 2.2 μ A",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "47bfb51e0cb1781eab67e6a09fc79931ed118ae27764f96c82bd9d09e2a72736",
+    "raw_question_hash_after": "47bfb51e0cb1781eab67e6a09fc79931ed118ae27764f96c82bd9d09e2a72736",
+    "raw_solution_hash_before": "56c03605a909d867da1ed18afec3fd1fc70bf3957a67360c0bc0e174c024cea3",
+    "raw_solution_hash_after": "56c03605a909d867da1ed18afec3fd1fc70bf3957a67360c0bc0e174c024cea3",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 320,
+      "reconstructed_text_length": 320,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "C",
+    "normalized_answer": "C",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "68dea619d0cda73d07e93aee",
+    "qid": "SecBQ30",
+    "question_type": "integerQuestion",
+    "sub_category": "integer_no_options",
+    "subject": "Physics",
+    "chapter": "Rotational Motion",
+    "detected_option_markers": [],
+    "marker_types": [],
+    "extracted_options": [],
+    "stem_extraction_status": "integer_no_options",
+    "stem_text_preview": "Two wheels each marked with a dot on its rim are mounted side by side. When the wheels are at rest, the dots are aligned",
+    "solution_text_preview": "Dots will be aligned again after time ' t ', if slower disc makes one rotation less than the other disc 2 π n = (1 / 2) ",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "fd6a5f60e0ac640396786df1b49931569b59c9cd8c7f1ea8c3160fe0135e68a5",
+    "raw_question_hash_after": "fd6a5f60e0ac640396786df1b49931569b59c9cd8c7f1ea8c3160fe0135e68a5",
+    "raw_solution_hash_before": "be0190f61045252342a16421f92e52f8de8226e658eeeaf855104d35994abaa1",
+    "raw_solution_hash_after": "be0190f61045252342a16421f92e52f8de8226e658eeeaf855104d35994abaa1",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 374,
+      "reconstructed_text_length": 374,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "4",
+    "normalized_answer": "4",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "68e872546e45ba37dcc16bc0",
+    "qid": "SecAQ6",
+    "question_type": "scq",
+    "sub_category": "scq_blank_option",
+    "subject": "Physics",
+    "chapter": "Electrostatics",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "mathml_mo",
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "9 : 16",
+        "html_length": 121,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "B",
+        "text": "2 : sqrt(3)",
+        "html_length": 148,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "C",
+        "text": "",
+        "html_length": 0,
+        "is_blank": true,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "3 : 4",
+        "html_length": 120,
+        "is_blank": false,
+        "has_mathml": true
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "There are two charges + 3 μ C and − 4 μ C placed at a certain distance apart. The ratio of coulombic forces acting on th",
+    "solution_text_preview": "F →_12 + F →_21 = 0 | F →_12 | = | − F →_21 |",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "17ad9dbe958ec4d8fbd71666d1a0f9a651fb82c145f54235efcacf6517257b29",
+    "raw_question_hash_after": "17ad9dbe958ec4d8fbd71666d1a0f9a651fb82c145f54235efcacf6517257b29",
+    "raw_solution_hash_before": "289daccf1c85b203661c5ddc87b2a3a443372a6dce3e0095b5035bf528e90d12",
+    "raw_solution_hash_after": "289daccf1c85b203661c5ddc87b2a3a443372a6dce3e0095b5035bf528e90d12",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 171,
+      "reconstructed_text_length": 171,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "C",
+    "normalized_answer": "C",
+    "answer_anomalies": [],
+    "parser_warnings": [
+      "Option C has blank/empty content"
+    ],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "66fe9dbe22132e5a70a3e579",
+    "qid": null,
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Zoology",
+    "chapter": "Chemical Coordination and Integration",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "Parathormone – Calcitonin",
+        "html_length": 25,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "Insulin - Glucagon",
+        "html_length": 18,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "Aldosterone Atrial Natriuretic Factor",
+        "html_length": 37,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "Relaxin - Inhibin",
+        "html_length": 17,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "Which of the following pairs of hormones are not antagonistic (having opposite effects) to each other?",
+    "solution_text_preview": "Calcitonin exerts its effects by interacting with target cells, primarily in bone and kidney. The actions of PTH and cal",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": false,
+    "raw_question_hash_before": "25d6fd8326bbc74384b9074f516db7b71b0b335a7d151d6da17f287535736262",
+    "raw_question_hash_after": "25d6fd8326bbc74384b9074f516db7b71b0b335a7d151d6da17f287535736262",
+    "raw_solution_hash_before": "7e846ace3cfa4457d79689157470eed62bb0fd359d53d03b49a2a3d8bbaa9295",
+    "raw_solution_hash_after": "7e846ace3cfa4457d79689157470eed62bb0fd359d53d03b49a2a3d8bbaa9295",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 219,
+      "reconstructed_text_length": 219,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "D",
+    "normalized_answer": "D",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "620e23cecc50543bc7db9186",
+    "qid": "ooPnTRb-EH",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Zoology",
+    "chapter": "Evolution",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "She looks among snake fossils for evidences that being forked is a characteristic of the ancestor of this group, but determines no such fossils exists",
+        "html_length": 150,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "She locates a specimen of a more distantly related snake to see if it has a forked tongue",
+        "html_length": 89,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "She looks at a representative mammal species to see if it has a forked tongue",
+        "html_length": 77,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "She flips a coin",
+        "html_length": 16,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "A biologist is trying to infer how five closely related species of snakes are related to one another. She noticed that s",
+    "solution_text_preview": "Forked tongue snakes may represents the origin of new variety of snake from the non-forked tongue snakes. If biologist i",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": false,
+    "raw_question_hash_before": "2f24dd0b2d545259bdefd739f25f1b25ab97fba08187f57834ea7ec42378cd6b",
+    "raw_question_hash_after": "2f24dd0b2d545259bdefd739f25f1b25ab97fba08187f57834ea7ec42378cd6b",
+    "raw_solution_hash_before": "748c1cace47b5f394574b1270eec97d65c9e77b605019cc25cd0cf9ae47abbef",
+    "raw_solution_hash_after": "748c1cace47b5f394574b1270eec97d65c9e77b605019cc25cd0cf9ae47abbef",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 604,
+      "reconstructed_text_length": 604,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "B",
+    "normalized_answer": "B",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "6208e80a9cb2ab67dac61bd0",
+    "qid": "hYQRqKx1w",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Botany",
+    "chapter": "Photosynthesis in Higher Plants",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "Herb, shrubs receive more red light",
+        "html_length": 35,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "Herb, shrubs receive more blue light",
+        "html_length": 36,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "Herb, shrubs receive more green light",
+        "html_length": 37,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "Herb, shrubs receive more white light",
+        "html_length": 37,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "Rate of photosynthesis is low in herbs, shrubs as compared to sun plants because",
+    "solution_text_preview": "Minimum photosynthesis occur in the green wavelength. Plants grow under the canopy like herbs and shrubs receive very li",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": false,
+    "raw_question_hash_before": "acd9688c108ebaf42570cfc9c699c09b641f195c5a35d65226b2a5c0ce8027cd",
+    "raw_question_hash_after": "acd9688c108ebaf42570cfc9c699c09b641f195c5a35d65226b2a5c0ce8027cd",
+    "raw_solution_hash_before": "5ee3867bfba8cb72aa0c6a12cd790fbbc203b7bad40dd0e4429edc7bab788a1e",
+    "raw_solution_hash_after": "5ee3867bfba8cb72aa0c6a12cd790fbbc203b7bad40dd0e4429edc7bab788a1e",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 245,
+      "reconstructed_text_length": 245,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "C",
+    "normalized_answer": "C",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "68dea657387eea3d0d95f54a",
+    "qid": "SecAQ14",
+    "question_type": "integerQuestion",
+    "sub_category": "integer_no_options",
+    "subject": "Physics",
+    "chapter": "Geometrical optics and optical instruments",
+    "detected_option_markers": [],
+    "marker_types": [],
+    "extracted_options": [],
+    "stem_extraction_status": "integer_no_options",
+    "stem_text_preview": "Two identical thin converging lenses are kept in contact at a distance 12.5 cm from an object. If real image produced is",
+    "solution_text_preview": "If f_eq is the focal length of combination, we use u = − 12.5 c m For real image v = m u = + 50 c m (1 / v) − (1 / u) = ",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "67c863d8d76a6f986b3f0c10ee1bc60ebddebf91131ce1c35c5e59a6ec3dcf13",
+    "raw_question_hash_after": "67c863d8d76a6f986b3f0c10ee1bc60ebddebf91131ce1c35c5e59a6ec3dcf13",
+    "raw_solution_hash_before": "5ea47d371af2c9eccc3b281770dcf3cea3b3b08240d2fd62f432905d1b97f555",
+    "raw_solution_hash_after": "5ea47d371af2c9eccc3b281770dcf3cea3b3b08240d2fd62f432905d1b97f555",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 194,
+      "reconstructed_text_length": 194,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "5",
+    "normalized_answer": "5",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "61dffbec08489156b684bd22",
+    "qid": "mdgrnTePv",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Zoology",
+    "chapter": "Structural Organisation in Animals",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "Epithellial tisue",
+        "html_length": 17,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "Connective tissue",
+        "html_length": 17,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "Nervous tissue",
+        "html_length": 14,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "Muscular tissue",
+        "html_length": 15,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "Which tissue is present in the lining of small intestine?",
+    "solution_text_preview": "Epithelial tissue has free surfaces, which faces either a body fluid or the outside environment and thus, provides a cov",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": false,
+    "raw_question_hash_before": "1ac5d6f843c4380625f9bbe61255cc1c983ad16172df0b0a99095de5f642e413",
+    "raw_question_hash_after": "1ac5d6f843c4380625f9bbe61255cc1c983ad16172df0b0a99095de5f642e413",
+    "raw_solution_hash_before": "d2290494c4a758a429b135127146dc3eb3411ca2c403cb4986b2d2807788fdd1",
+    "raw_solution_hash_after": "d2290494c4a758a429b135127146dc3eb3411ca2c403cb4986b2d2807788fdd1",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 140,
+      "reconstructed_text_length": 140,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "A",
+    "normalized_answer": "A",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "68e870ef42c06737d6e565c4",
+    "qid": "SecAQ27",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Physics",
+    "chapter": "Kinetic theory of gases",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "mathml_mo"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "4556 N / m^2",
+        "html_length": 223,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "B",
+        "text": "8225 N / m^2",
+        "html_length": 223,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "C",
+        "text": "7520 N / m^2",
+        "html_length": 223,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "D",
+        "text": "4800 N / m^2",
+        "html_length": 223,
+        "is_blank": false,
+        "has_mathml": true
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "The density of a gas is 9 × 10^− 2 k g / m^3 and root mean square velocity of gas molecules is 400 m / s . The pressure ",
+    "solution_text_preview": "Pressure of the gas P = (1 / 3) ρ ( v_r m s )^2 P = (1 / 3) × 9 × 10^− 2 × ( 400 )^2 = 4800 N / m^2",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "c6a590539eb43b39cde988528994389434b6ac9be91817d4ae3b19e8c80a7fe6",
+    "raw_question_hash_after": "c6a590539eb43b39cde988528994389434b6ac9be91817d4ae3b19e8c80a7fe6",
+    "raw_solution_hash_before": "50c5bae0e1ab81396128a422d5eeff48ed6a69585b7cc5c6316c1a00a7a0678e",
+    "raw_solution_hash_after": "50c5bae0e1ab81396128a422d5eeff48ed6a69585b7cc5c6316c1a00a7a0678e",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 236,
+      "reconstructed_text_length": 236,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "A",
+    "normalized_answer": "A",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "68e8734442c06737d6e56da4",
+    "qid": "SecAQ14",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Physics",
+    "chapter": "Newton's law of motion",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "0.8",
+        "html_length": 3,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "0.4",
+        "html_length": 3,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "0.6",
+        "html_length": 3,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "0.2",
+        "html_length": 3,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "A block of weight 100 N when pushed by a force F on a horizontal rough surface moves with an acceleration 1 m / s^2 , wh",
+    "solution_text_preview": "F − μ m g = m a F − μ × 100 = 10 When force becomes double 2 F − μ 100 = 100 On putting the value of F from (i) and (ii)",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "0de055caffbdbd61995eb6b7dd30e688d82ad52a67c4d5016dbc07ea83940ac0",
+    "raw_question_hash_after": "0de055caffbdbd61995eb6b7dd30e688d82ad52a67c4d5016dbc07ea83940ac0",
+    "raw_solution_hash_before": "501e6af7337b93aae7c597a0df5e351aab4e17bc2824fc81f31d8f49a4d764cb",
+    "raw_solution_hash_after": "501e6af7337b93aae7c597a0df5e351aab4e17bc2824fc81f31d8f49a4d764cb",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 285,
+      "reconstructed_text_length": 285,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "A",
+    "normalized_answer": "A",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "6956d79788d7701e5617bc29",
+    "qid": "MHCET_BvpWWm7z2cY7YB0TjCzV_PHY_150",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Physics",
+    "chapter": "AC Circuits",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "200 W",
+        "html_length": 5,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "0 W",
+        "html_length": 3,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "0 W",
+        "html_length": 3,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "1000 W",
+        "html_length": 6,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "In an AC circuit, the current is i = 5 sin ( 100 t − (π / 2) ) A and voltage is e = 200 sin ( 100 t ) volt. Power consum",
+    "solution_text_preview": "& P = I_r m s V_r m s cos ϕ & ϕ = 90^∘ ∴ P = 0 ( ∵ cos 90^∘ = 0 )",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "04588a84e6034de77df66a90d2a4c50df60eda1572e9f853faf7abb557988f82",
+    "raw_question_hash_after": "04588a84e6034de77df66a90d2a4c50df60eda1572e9f853faf7abb557988f82",
+    "raw_solution_hash_before": "14b3faf371d51b91bdf87b8d679a2f2a31ef3837c648a3e3bd087e3258563f0d",
+    "raw_solution_hash_after": "14b3faf371d51b91bdf87b8d679a2f2a31ef3837c648a3e3bd087e3258563f0d",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 197,
+      "reconstructed_text_length": 197,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "B",
+    "normalized_answer": "B",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "695ee00b88d7701e561aabc5",
+    "qid": "MHCET_PCB_PYQ_2025_12_PHY_L539",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Physics",
+    "chapter": "Waves",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "Both A and R are true, and R is the correct explanation of A .",
+        "html_length": 62,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "Both A and R are true, but R is not the correct explanation of A .",
+        "html_length": 66,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "A is true, but R is false.",
+        "html_length": 26,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "A is false, but R is true.",
+        "html_length": 26,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "Assertion (A) : When two waves of equal amplitude and a phase difference of (π / 2) interfere, the resulting intensity i",
+    "solution_text_preview": "Assertion (A) is false because when two waves of equal amplitude interfere with a phase difference of (π / 2) , the resu",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "da83828010b3604be40838fe5ddacea9f868cef4c994a27805ef65b0cf95717c",
+    "raw_question_hash_after": "da83828010b3604be40838fe5ddacea9f868cef4c994a27805ef65b0cf95717c",
+    "raw_solution_hash_before": "1ada08f7e09c7df883614329c76362fa2902b9c5704f5c149e52104028f16ca0",
+    "raw_solution_hash_after": "1ada08f7e09c7df883614329c76362fa2902b9c5704f5c149e52104028f16ca0",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 491,
+      "reconstructed_text_length": 491,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "D",
+    "normalized_answer": "D",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "622df25ab70e4b50e44ff837",
+    "qid": "F-eZtasNL",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Physics",
+    "chapter": "Properties of matter and fluid mechanics",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "air from end 1 flows towards end 2 . No change in the volume of the soap bubbles",
+        "html_length": 80,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "air from end 1 flows towards end 2. Volume of the soap bubble at end 1 decreases",
+        "html_length": 80,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "no change occurs",
+        "html_length": 16,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "air from end 2 flows towards end 1 . Volume of the soap bubble at end 1 increases",
+        "html_length": 81,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "A glass tube of uniform internal radius (r) has a valve separating the two identical ends. Initially, the valve is in a ",
+    "solution_text_preview": "Pressure inside tube = P = P_0 + (4 T / r) ∴ P_2 < P_1 ( since r_2 > r_1 ) Hence pressure on side 1 will be greater than",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "ff8089a49cf90052143234512cfc058e20381d2f3c62f9229141b5ec46774e3f",
+    "raw_question_hash_after": "ff8089a49cf90052143234512cfc058e20381d2f3c62f9229141b5ec46774e3f",
+    "raw_solution_hash_before": "b25373ba661838a00e4c15d11ebf010c32ea509cf5c7cf140cdad39919e88941",
+    "raw_solution_hash_after": "b25373ba661838a00e4c15d11ebf010c32ea509cf5c7cf140cdad39919e88941",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 562,
+      "reconstructed_text_length": 562,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "B",
+    "normalized_answer": "B",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "6208e298fa399567e0878700",
+    "qid": "zSEnT8qqj",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Botany",
+    "chapter": "Photosynthesis in Higher Plants",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "Julius von Sachs",
+        "html_length": 16,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "Stephen Hales",
+        "html_length": 13,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "Lavoisier",
+        "html_length": 9,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "Von Helmont",
+        "html_length": 11,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "Who provided the evidence for the production of glucose when plant grows?",
+    "solution_text_preview": "Julius von Sachs provided evidence for the production of glucose when plants grow. Glucose is usually stored as starch. ",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": false,
+    "raw_question_hash_before": "385a809b8f73c896994ba216353a41aff8c35c514fda4a05f215e77d29d6182e",
+    "raw_question_hash_after": "385a809b8f73c896994ba216353a41aff8c35c514fda4a05f215e77d29d6182e",
+    "raw_solution_hash_before": "381080918bda39ff42febdd5a351d9fd4f1b02d10119b064763ffd99457a86cd",
+    "raw_solution_hash_after": "381080918bda39ff42febdd5a351d9fd4f1b02d10119b064763ffd99457a86cd",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 142,
+      "reconstructed_text_length": 142,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "A",
+    "normalized_answer": "A",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "695ede2a88d7701e561aa9d9",
+    "qid": "MHCET_PCB_PYQ_2021_1_BIO_L876",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Zoology",
+    "chapter": "Excretory Products and their Elimination",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "Statement-I is incorrect but Statement-II is correct.",
+        "html_length": 53,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "Both Statement-I and Statement-II are correct.",
+        "html_length": 46,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "Both Statement-I and Statement-II are incorrect.",
+        "html_length": 48,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "Statement-I is correct but Statement-II is incorrect.",
+        "html_length": 53,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "Based on the statements regarding dialysis choose the correct answer from options given below. Statement-I: Dialysis is ",
+    "solution_text_preview": "The correct answer is (D) Statement-I is correct but Statement-II is incorrect. as dialysis serves as a crucial bridge u",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": false,
+    "raw_question_hash_before": "0411ecf0660d716ab388716cae205e24f5bac5d14b5d1ae310f591aa333ee356",
+    "raw_question_hash_after": "0411ecf0660d716ab388716cae205e24f5bac5d14b5d1ae310f591aa333ee356",
+    "raw_solution_hash_before": "db1ad4c6ed0aab94a7acaa0064cdba9d8680d55cb77189fcd9aec06d08b998a4",
+    "raw_solution_hash_after": "db1ad4c6ed0aab94a7acaa0064cdba9d8680d55cb77189fcd9aec06d08b998a4",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 518,
+      "reconstructed_text_length": 518,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "D",
+    "normalized_answer": "D",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "612151a6a34397610a9a2e58",
+    "qid": "pbMm2pKu_",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Physics",
+    "chapter": "Photoelectric effect and matter waves",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "0.168 eV",
+        "html_length": 8,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "16.8 eV",
+        "html_length": 7,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "1.68 eV",
+        "html_length": 7,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "2.5 eV",
+        "html_length": 6,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "The kinetic energy of an electron with de-Broglie wavelength of 0.3 nanometer is",
+    "solution_text_preview": "= 5.469 × 10^− 10 m = 5.47 \\AA λ = (h / | p |) = (h / | I |) = 2.65 × 10^− 18 J = 16.8 e V",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "0b0f4d1123924efdc1cb4bb3956f960345420f055f76c6f8f770146a95531e97",
+    "raw_question_hash_after": "0b0f4d1123924efdc1cb4bb3956f960345420f055f76c6f8f770146a95531e97",
+    "raw_solution_hash_before": "81a70d97fffa2ba711413350f4effb0d9c86c5fbb61143f6e4268cfed72da44a",
+    "raw_solution_hash_after": "81a70d97fffa2ba711413350f4effb0d9c86c5fbb61143f6e4268cfed72da44a",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 128,
+      "reconstructed_text_length": 128,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "B",
+    "normalized_answer": "B",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "60f742f6660d187cc13a8078",
+    "qid": null,
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Physics",
+    "chapter": "Alternating Current and EM Waves",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "30 ohm",
+        "html_length": 6,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "40 ohm",
+        "html_length": 6,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "50 ohm",
+        "html_length": 6,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "60 ohm",
+        "html_length": 6,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "A resistance of 40 ohm and an inductance are connected in series in a 50 cycles/second ac circuit. The impedance of this",
+    "solution_text_preview": "Z = sqrt(R^2 + ( 2 π v L )^2) = sqrt(( 40 )^2 + 4 π^2 × ( 50 )^2 × ( 95.5 × 10^− 3 )^2) = 50 o h m",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "39869ee9a8fc9fd309455647b9f7aa19ceffc821d30987f08fd051e4a0fba00c",
+    "raw_question_hash_after": "39869ee9a8fc9fd309455647b9f7aa19ceffc821d30987f08fd051e4a0fba00c",
+    "raw_solution_hash_before": "1fab0984cb483edc522805fff63306ef8282bbaf52b5ac7b9108b9b9c62f475e",
+    "raw_solution_hash_after": "1fab0984cb483edc522805fff63306ef8282bbaf52b5ac7b9108b9b9c62f475e",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 191,
+      "reconstructed_text_length": 191,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "C",
+    "normalized_answer": "C",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "68f21df0941cda588bc0470b",
+    "qid": "SecAQ14",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Physics",
+    "chapter": "Work, power and energy",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "Become twice its initial value",
+        "html_length": 30,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "Become three times, its initial value",
+        "html_length": 37,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "Become four times, its initial value",
+        "html_length": 36,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "Remains constant",
+        "html_length": 16,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "If the kinetic energy of a body becomes four times of its initial value, then new momentum will",
+    "solution_text_preview": "(p_2 / p_1) = sqrt((K E_2 / K E_1)) When KE become four times then momentum (p) become two times.",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "14f86262b040a02ec7c7f57884f5a96e76cd1b7a26cdf664b783315378492b91",
+    "raw_question_hash_after": "14f86262b040a02ec7c7f57884f5a96e76cd1b7a26cdf664b783315378492b91",
+    "raw_solution_hash_before": "c70d05283a0e1f08eb2d44fb8300f1f99183a37e12104157eb1b9382599f0ce5",
+    "raw_solution_hash_after": "c70d05283a0e1f08eb2d44fb8300f1f99183a37e12104157eb1b9382599f0ce5",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 234,
+      "reconstructed_text_length": 234,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "A",
+    "normalized_answer": "A",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "6264197209f4fd65f58f5707",
+    "qid": "uiKqpBTMj",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Zoology",
+    "chapter": "Biotechnology and its Applications",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "'Flavr Savr' tomato",
+        "html_length": 19,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "Canolla",
+        "html_length": 7,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "Golden rice",
+        "html_length": 11,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "Bt-Brinjal",
+        "html_length": 10,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "Consumption of which one of the following foods can prevent the kind of blindness associated with vitamin 'A' deficiency",
+    "solution_text_preview": "Golden riceis genetically engineered to producebeta-carotene, a precursor ofvitamin A, in the edible parts of the rice. ",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": false,
+    "raw_question_hash_before": "0c7ef551904e12a2032fa91f0209969aca7d74510077eade35ac474d2bfe626f",
+    "raw_question_hash_after": "0c7ef551904e12a2032fa91f0209969aca7d74510077eade35ac474d2bfe626f",
+    "raw_solution_hash_before": "c508367e9349c4b82b1eb1d479d7f0872e9697c4e7c1a71d13fd6788a974ea17",
+    "raw_solution_hash_after": "c508367e9349c4b82b1eb1d479d7f0872e9697c4e7c1a71d13fd6788a974ea17",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 188,
+      "reconstructed_text_length": 188,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "C",
+    "normalized_answer": "C",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "617fa18efd53ff1629ed890f",
+    "qid": "nQM6UGBK-",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Botany",
+    "chapter": "Morphology of Flowering Plants",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "Petiole",
+        "html_length": 7,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "Node",
+        "html_length": 4,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "Stipule",
+        "html_length": 7,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "Lamina",
+        "html_length": 6,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "(NEET 2019) Which of the following is the green expanded part of leaf with vein and veinlets?",
+    "solution_text_preview": "Lamina on the leaf blade is usually flattened green photosynthetic part consisting leaf veins and veinlets. Its upper su",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": false,
+    "raw_question_hash_before": "92f5de2aba6a5141af46ddaa50e4e72a83fb49f871a6cbb97ec584c7b903d13f",
+    "raw_question_hash_after": "92f5de2aba6a5141af46ddaa50e4e72a83fb49f871a6cbb97ec584c7b903d13f",
+    "raw_solution_hash_before": "50c29f407f3dc488bdccd3c4952c68f107899577153c958b2a2e59a4c6987d8d",
+    "raw_solution_hash_after": "50c29f407f3dc488bdccd3c4952c68f107899577153c958b2a2e59a4c6987d8d",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 137,
+      "reconstructed_text_length": 137,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "D",
+    "normalized_answer": "D",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "6062ec84518e9535e120c422",
+    "qid": null,
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Physics",
+    "chapter": "Temperature and thermal properties of matter",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "5.7 x 10-5/oC",
+        "html_length": 13,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "0.63 x 10-5/oC",
+        "html_length": 14,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "1.9 x 10-5/oC",
+        "html_length": 13,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "16.1 x 10-5/oC",
+        "html_length": 14,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "A silver rod of length 1 m (or 100 cm) at 0 o C is heated to 100 o C . It’s length is increased by 0.19 cm. Find the coe",
+    "solution_text_preview": "α = (Δ L / L_0 ( Δ θ )) = (0.19 / 100 ( 100 − 0 )) = 1.9 × 10^− 5 / A C γ = 3 a = 3 × 1.9 × 10^− 5 / C = 5.7 × 10^− 5 / ",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "82ebb02ce32811fd4f79f7e02b0c0452446180226935cdbbcccddb37a379f08e",
+    "raw_question_hash_after": "82ebb02ce32811fd4f79f7e02b0c0452446180226935cdbbcccddb37a379f08e",
+    "raw_solution_hash_before": "9a2c1321b0039dda29f5bd208b5abfb45c76be4bb378abed2d7a024d2b775e78",
+    "raw_solution_hash_after": "9a2c1321b0039dda29f5bd208b5abfb45c76be4bb378abed2d7a024d2b775e78",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 250,
+      "reconstructed_text_length": 234,
+      "character_difference": 16,
+      "fidelity_ratio": 0.936,
+      "fidelity_pass": true
+    },
+    "raw_answer": "A",
+    "normalized_answer": "A",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "5fc60508028950133eac8963",
+    "qid": "9u1vPUIytR",
+    "question_type": "integerQuestion",
+    "sub_category": "integer_no_options",
+    "subject": "Physics",
+    "chapter": "Newton's law of motion",
+    "detected_option_markers": [],
+    "marker_types": [],
+    "extracted_options": [],
+    "stem_extraction_status": "integer_no_options",
+    "stem_text_preview": "A body of mass 2 kg is kept by pressing to a vertical wall by a force of 100 N. The friction between wall and body is 0.",
+    "solution_text_preview": "The maximum friction available to prevent sliding is given by: f_m a x = μ × N = 0 . 3 × 100 = 30 N The force pulling th",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "806f7c8271c84d0871545cc5e6da1a0c871d86559bdf0eb5265317ce0b381bac",
+    "raw_question_hash_after": "806f7c8271c84d0871545cc5e6da1a0c871d86559bdf0eb5265317ce0b381bac",
+    "raw_solution_hash_before": "520eea74883494d7306d8a35863a6f090135535b7f48871b9742cdb382bb7dc2",
+    "raw_solution_hash_after": "520eea74883494d7306d8a35863a6f090135535b7f48871b9742cdb382bb7dc2",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 160,
+      "reconstructed_text_length": 160,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "20",
+    "normalized_answer": "20",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "68dea6e6387eea3d0d95f6f8",
+    "qid": "SecAQ11",
+    "question_type": "integerQuestion",
+    "sub_category": "integer_no_options",
+    "subject": "Physics",
+    "chapter": "Geometrical optics and optical instruments",
+    "detected_option_markers": [],
+    "marker_types": [],
+    "extracted_options": [],
+    "stem_extraction_status": "integer_no_options",
+    "stem_text_preview": "In a setup of displacement method experiment, distance between the screen and a light source is 150 cm and the lens used",
+    "solution_text_preview": "f = ( (D^2 − x^2 / 4 D) ) x^2 = D^2 − 4 D F x = sqrt(D ( D − 4 f )) x = sqrt(150 ( 150 − 96 )) x = sqrt(150 × 54) x = 90",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "399b760d094af686f260eee5140c02c86294dcef45ab65c1898fa637a30046eb",
+    "raw_question_hash_after": "399b760d094af686f260eee5140c02c86294dcef45ab65c1898fa637a30046eb",
+    "raw_solution_hash_before": "b2e5b26d4309304780a8604a16d04ee73fb0b0a6b38d07f975f3250204778442",
+    "raw_solution_hash_after": "b2e5b26d4309304780a8604a16d04ee73fb0b0a6b38d07f975f3250204778442",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 387,
+      "reconstructed_text_length": 387,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "16",
+    "normalized_answer": "16",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "68f21caf941cda588bc04365",
+    "qid": "SecAQ3",
+    "question_type": "mcq",
+    "sub_category": "mcq_4_options",
+    "subject": "Physics",
+    "chapter": "Mathematics in physics",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "0.693 min",
+        "html_length": 9,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "1.44 min",
+        "html_length": 8,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "2.079 min",
+        "html_length": 9,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "4.329 min",
+        "html_length": 9,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "A sample of nuclei X contains 48 × 10^23 nuclei at some time and reduced to 6 × 10^23 nuclei in 3 minutes. The mean life",
+    "solution_text_preview": "A sample of nuclei decreases from 48 × 10^23 to 6 × 10^23 in 3 minutes. Radioactive decay law: N = N_0 e^− (t / τ) Here ",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "cdc4f1b496f2ffe61dec9ed30f0228a05ed397f647cad16463fc8d9caeef324e",
+    "raw_question_hash_after": "cdc4f1b496f2ffe61dec9ed30f0228a05ed397f647cad16463fc8d9caeef324e",
+    "raw_solution_hash_before": "dddc62df3d1c0b5606f36756a750babae1479bc55c625380d854b383ea77def0",
+    "raw_solution_hash_after": "dddc62df3d1c0b5606f36756a750babae1479bc55c625380d854b383ea77def0",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 200,
+      "reconstructed_text_length": 200,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": [
+      "",
+      "B"
+    ],
+    "normalized_answer": [
+      "B"
+    ],
+    "answer_anomalies": [
+      "empty_string_in_answer_list"
+    ],
+    "parser_warnings": [
+      "Answer anomaly: empty_string_in_answer_list"
+    ],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "60f744b3f1b9bc7cc7b4a949",
+    "qid": null,
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Physics",
+    "chapter": "Alternating Current and EM Waves",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "50 V",
+        "html_length": 4,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "70 V",
+        "html_length": 4,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "130 V",
+        "html_length": 5,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "10 V",
+        "html_length": 4,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "In a LCR circuit the pd between the terminals of the inductance is 60 V, between the terminals of the capacitor is 30V a",
+    "solution_text_preview": "V = sqrt(V_R^2 + ( V_L − V_C )^2) = sqrt(( 40 )^2 + ( 60 − 30 )^2) = 50 V",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "14d8d7b43bbf57247f1858bd09182f4d69b5bc19341411263b9ad1e7adbd592c",
+    "raw_question_hash_after": "14d8d7b43bbf57247f1858bd09182f4d69b5bc19341411263b9ad1e7adbd592c",
+    "raw_solution_hash_before": "7b1c33f97dadd1914685b720d201d4d58c2cc9501454a6d4508217372edc74e3",
+    "raw_solution_hash_after": "7b1c33f97dadd1914685b720d201d4d58c2cc9501454a6d4508217372edc74e3",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 247,
+      "reconstructed_text_length": 247,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "C",
+    "normalized_answer": "C",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "68c801bc1b1dbc16dc93bf2b",
+    "qid": "SecAQ5",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Physics",
+    "chapter": "Photoelectric effect and matter waves",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "600 eV",
+        "html_length": 6,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "365 eV",
+        "html_length": 6,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "120 eV",
+        "html_length": 6,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "300 eV",
+        "html_length": 6,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "What should be the approximate kinetic energy of an electron so that its de-Broglie wavelength is equal to the wavelengt",
+    "solution_text_preview": "We want the kinetic energy of an electron such that: λ_d e B = λ_min For X-ray tube at accelerating potential V = 24 , 8",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "5f3f1d2ed6704b1b7d57f643d8946dcdd13402d5100fe47c2794bff8b5290afc",
+    "raw_question_hash_after": "5f3f1d2ed6704b1b7d57f643d8946dcdd13402d5100fe47c2794bff8b5290afc",
+    "raw_solution_hash_before": "8f56b6a31d4fdb9c40f6804b229dd2aa56d4e30c08e4262729e086c27df32a82",
+    "raw_solution_hash_after": "8f56b6a31d4fdb9c40f6804b229dd2aa56d4e30c08e4262729e086c27df32a82",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 322,
+      "reconstructed_text_length": 322,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "A",
+    "normalized_answer": "A",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "68dea577d0cda73d07e9391c",
+    "qid": "SecBQ25",
+    "question_type": "integerQuestion",
+    "sub_category": "integer_no_options",
+    "subject": "Physics",
+    "chapter": "Electrostatics",
+    "detected_option_markers": [],
+    "marker_types": [],
+    "extracted_options": [],
+    "stem_extraction_status": "integer_no_options",
+    "stem_text_preview": "A total charge Q is uniformly distributed throughout the volume of a sphere. Electric potential at a point on the surfac",
+    "solution_text_preview": "Let R be the radius of the sphere, therefore, potential on the surface is given by V_0 = V_∞ + (K Q / R) = V_∞ + V ⇒ V =",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "7d0a1c2e7296c58e223c7ac2577d9d12526a6ab1bada267e50d30b7677bc3dee",
+    "raw_question_hash_after": "7d0a1c2e7296c58e223c7ac2577d9d12526a6ab1bada267e50d30b7677bc3dee",
+    "raw_solution_hash_before": "9e3871250e5846de49cd9b6ae3d92d0fbb30f560a65b9832e40064ed6f6e14d8",
+    "raw_solution_hash_after": "9e3871250e5846de49cd9b6ae3d92d0fbb30f560a65b9832e40064ed6f6e14d8",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 399,
+      "reconstructed_text_length": 399,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "14",
+    "normalized_answer": "14",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "636283dbe3770c24f866e6d6",
+    "qid": "ci64iWyXK",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Physics",
+    "chapter": "Electrostatics",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "mathml_mo"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "1 : 4",
+        "html_length": 153,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "B",
+        "text": "4 : 1",
+        "html_length": 153,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "C",
+        "text": "1 : 8",
+        "html_length": 153,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "D",
+        "text": "8 : 1",
+        "html_length": 153,
+        "is_blank": false,
+        "has_mathml": true
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "Sixty four conducting drops each of radius 0.02 m and each carrying a charge of 5 μ C are combined to form a bigger drop",
+    "solution_text_preview": "Let R = radius of combined drop r = radius of smaller drop Volume will remain same (4 / 3) π R^3 = 64 × (4 / 3) π r^3 R ",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "0a1565897cf93f0a2efc2df3a3070f300f979c9e1817769684cc2224d4d10f21",
+    "raw_question_hash_after": "0a1565897cf93f0a2efc2df3a3070f300f979c9e1817769684cc2224d4d10f21",
+    "raw_solution_hash_before": "89fd3012f0035fb4280c73573bae4bfdc7fe914f03d38f518bd1e840a642f632",
+    "raw_solution_hash_after": "89fd3012f0035fb4280c73573bae4bfdc7fe914f03d38f518bd1e840a642f632",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 235,
+      "reconstructed_text_length": 235,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "B",
+    "normalized_answer": "B",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "6263d75bdd44e265ef926d97",
+    "qid": "I7Nnjj-FJ6",
+    "question_type": "integerQuestion",
+    "sub_category": "integer_no_options",
+    "subject": "Physics",
+    "chapter": "Properties of matter and fluid mechanics",
+    "detected_option_markers": [],
+    "marker_types": [],
+    "extracted_options": [],
+    "stem_extraction_status": "integer_no_options",
+    "stem_text_preview": "A wooden cube just floats inside water when a 800 g mass is placed on it. When the mass is removed, the cube is 2 cm abo",
+    "solution_text_preview": "Let a be the size of each side of the cube. Then, 800 × g = (2) × (a 2 ) × 1 × g a = 40 cm",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": false,
+    "raw_question_hash_before": "9b761afc9260ba91f84b5f416abf9e4a78f844643b7d147b2e0ce6144d95dcad",
+    "raw_question_hash_after": "9b761afc9260ba91f84b5f416abf9e4a78f844643b7d147b2e0ce6144d95dcad",
+    "raw_solution_hash_before": "973fe2876a4bd6d10c14c08f23c0b2ec27a2438f7e2a71aaeaf7bf93cfeb96a4",
+    "raw_solution_hash_after": "973fe2876a4bd6d10c14c08f23c0b2ec27a2438f7e2a71aaeaf7bf93cfeb96a4",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 190,
+      "reconstructed_text_length": 190,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "20",
+    "normalized_answer": "20",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "622f08d7b70e4b50e4500a1b",
+    "qid": "jxJrYy6ka",
+    "question_type": "scq",
+    "sub_category": "scq_missing_option",
+    "subject": "Physics",
+    "chapter": "Centre of mass and momentum conservation (collision)",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "marker_types": [
+      "mathml_mo"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "30 m / s",
+        "html_length": 214,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "B",
+        "text": "20 m / s",
+        "html_length": 214,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "C",
+        "text": "10 m / s",
+        "html_length": 214,
+        "is_blank": false,
+        "has_mathml": true
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "Two blocks of masses 10 kg and 4 kg are connected by a spring of negligible mass and placed on a frictionless horizontal",
+    "solution_text_preview": "v_C M & = (m_1 v_1 + m_2 v_2 / m_1 + m_2) & = (10 × 14 + 4 × 0 / 10 + 4) = (140 / 14) = 10 m / s",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "ef37c15f5c3ed296088dd27b506a9e1338b6b9a93a546d0e3b23904190af4a40",
+    "raw_question_hash_after": "ef37c15f5c3ed296088dd27b506a9e1338b6b9a93a546d0e3b23904190af4a40",
+    "raw_solution_hash_before": "90ee5bc0a4cd292a671542e3845c12240a4b2c715bd23ed7903f69e9d8437233",
+    "raw_solution_hash_after": "90ee5bc0a4cd292a671542e3845c12240a4b2c715bd23ed7903f69e9d8437233",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 306,
+      "reconstructed_text_length": 306,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "C",
+    "normalized_answer": "C",
+    "answer_anomalies": [],
+    "parser_warnings": [
+      "Option D is missing from question (only A, B, C present)"
+    ],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "63765a28f1d8416ae0408d89",
+    "qid": "U91mXru5mg",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Physics",
+    "chapter": "Nuclear physics and radioactivity",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "120 days",
+        "html_length": 8,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "130 days",
+        "html_length": 8,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "180 days",
+        "html_length": 8,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "20 days",
+        "html_length": 7,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "The half life period of a radioactive substance is 60 days. The time taken for \\frac{7}{8} th of its original mass to di",
+    "solution_text_preview": "7/8 disintegrates means 1/8 remains Or ( (1 / 2) )^3 ∴ 3 half lives = 180 days",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "d79725c6a91346d4293c8ec7649520cc8dc1aa628e00b5b660f604ea93e6c3bd",
+    "raw_question_hash_after": "d79725c6a91346d4293c8ec7649520cc8dc1aa628e00b5b660f604ea93e6c3bd",
+    "raw_solution_hash_before": "85b607f7c33ec53d8dd2e531469c58d6741b6e1279a4b03571ebd47fb292f101",
+    "raw_solution_hash_after": "85b607f7c33ec53d8dd2e531469c58d6741b6e1279a4b03571ebd47fb292f101",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 191,
+      "reconstructed_text_length": 191,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "C",
+    "normalized_answer": "C",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "68c8153cfb6b2f16e2d3ceaf",
+    "qid": "SecAQ7",
+    "question_type": "mcq",
+    "sub_category": "mcq_4_options",
+    "subject": "Physics",
+    "chapter": "Electrostatics",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "mathml_mo",
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "parallel to the uniform electrostatic field is a straight line.",
+        "html_length": 63,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "perpendicular to the uniform electrostatic field is a parabola.",
+        "html_length": 63,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "parallel to the uniform magnetic field is a helix with its axis parallel to the direction of B .",
+        "html_length": 198,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "D",
+        "text": "perpendicular to the uniform magnetic field is a circle in a plane normal to the field.",
+        "html_length": 87,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "Select the correct statement(s) from the following. The path of a charged particle moving with an initial velocity u",
+    "solution_text_preview": "conceptual Based of field force F = q ( V × B ) F = q E",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "73579cd308b9a32e03975fa2ecc850eb9521b873fa0877b177956e294faddd58",
+    "raw_question_hash_after": "73579cd308b9a32e03975fa2ecc850eb9521b873fa0877b177956e294faddd58",
+    "raw_solution_hash_before": "b4638a603bd9314f70a91bda6027174230c75008b0ccf7bc4f353cae54be0f4d",
+    "raw_solution_hash_after": "b4638a603bd9314f70a91bda6027174230c75008b0ccf7bc4f353cae54be0f4d",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 445,
+      "reconstructed_text_length": 445,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": [
+      "A, B, D"
+    ],
+    "normalized_answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "answer_anomalies": [
+      "comma_separated_string_in_list"
+    ],
+    "parser_warnings": [
+      "Answer anomaly: comma_separated_string_in_list"
+    ],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "6956d7e988d7701e5617bd3e",
+    "qid": "MHCET_gNlzG0ZcBlNSzwBSMUak_PHY_129",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Physics",
+    "chapter": "Oscillations",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "mathml_mo"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "2 sqrt(2 m)",
+        "html_length": 200,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "B",
+        "text": "4 sqrt(2 m)",
+        "html_length": 200,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "C",
+        "text": "6 sqrt(2 m)",
+        "html_length": 200,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "D",
+        "text": "8 sqrt(2 m)",
+        "html_length": 200,
+        "is_blank": false,
+        "has_mathml": true
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "A particle performing SHM starts equilibrium position and its time period is 16 seconds. After 2 seconds its velocity is",
+    "solution_text_preview": "Given, particle velocity, v = π m / s and time period T = 16 s Displacement of the particle, x = A sin ω t Velocity of t",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "e8f1a44a96a8e43aeb5ea9a178af7002bdfe31616f4863b0d3577ec9ac1da593",
+    "raw_question_hash_after": "e8f1a44a96a8e43aeb5ea9a178af7002bdfe31616f4863b0d3577ec9ac1da593",
+    "raw_solution_hash_before": "93e525cea116bdfaf0d3b42c5939d8ba7b865262d503256d335f2ba3b2eaee91",
+    "raw_solution_hash_after": "93e525cea116bdfaf0d3b42c5939d8ba7b865262d503256d335f2ba3b2eaee91",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 251,
+      "reconstructed_text_length": 251,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "D",
+    "normalized_answer": "D",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "6956d7bb23cb221e570d6013",
+    "qid": "MHCET_Dyqq8UM5069PfvNTSZqs_PHY_99",
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Physics",
+    "chapter": "Motion in a Plane",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "mathml_mo"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "tan^− 1 ( 2 )",
+        "html_length": 214,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "B",
+        "text": "tan^− 1 ( 4 )",
+        "html_length": 214,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "C",
+        "text": "tan^− 1 ( 3 )",
+        "html_length": 214,
+        "is_blank": false,
+        "has_mathml": true
+      },
+      {
+        "key": "D",
+        "text": "tan^− 1 ( 0.5 )",
+        "html_length": 216,
+        "is_blank": false,
+        "has_mathml": true
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "The angle of projection of a projectile for which horizontal range and height attain same magnitude is",
+    "solution_text_preview": "Solution: (b) Here, H = R (u^2 sin^2 θ / 2 g) = (u^2 sin 2 θ / g) ⇒ (sin^2 θ / 2) = sin 2 θ ⇒ (sin^2 θ / 2) = 2 sin θ co",
+    "has_mathml_in_question": true,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "01b9830c8d126ade3b0b7d165b912b7c6105bf46ec8ee2a030a7ed689d61b483",
+    "raw_question_hash_after": "01b9830c8d126ade3b0b7d165b912b7c6105bf46ec8ee2a030a7ed689d61b483",
+    "raw_solution_hash_before": "2cef4d4857c52222c0378265274613170e3da2deb0c94114dc987792653d36e5",
+    "raw_solution_hash_after": "2cef4d4857c52222c0378265274613170e3da2deb0c94114dc987792653d36e5",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 176,
+      "reconstructed_text_length": 176,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "B",
+    "normalized_answer": "B",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "68dea7c2387eea3d0d95f9bb",
+    "qid": "SecAQ16",
+    "question_type": "integerQuestion",
+    "sub_category": "integer_no_options",
+    "subject": "Physics",
+    "chapter": "Wave optics",
+    "detected_option_markers": [],
+    "marker_types": [],
+    "extracted_options": [],
+    "stem_extraction_status": "integer_no_options",
+    "stem_text_preview": "In YDSE distance between the slits plane and screen is 1 m and distance between two slits is 5 mm . If slabs of thicknes",
+    "solution_text_preview": "D = 1 m , d = 5 × 10^− 3 m shift = (D / d) [ t_1 ( μ_1 − 1 ) − t_2 ( μ_2 − 1 ) ] = (1 / 5 × 10^− 3) [ 2 ( 1.5 − 1 ) − 1.",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": true,
+    "raw_question_hash_before": "bf8cd6b5bf42322b9b49f50598fc1d3b4073880b8f5b753b34255a251c7a477b",
+    "raw_question_hash_after": "bf8cd6b5bf42322b9b49f50598fc1d3b4073880b8f5b753b34255a251c7a477b",
+    "raw_solution_hash_before": "17b03623432e28c18c3174c37b4622b61ff7238d13e839a0d8b89716c6b05dcd",
+    "raw_solution_hash_after": "17b03623432e28c18c3174c37b4622b61ff7238d13e839a0d8b89716c6b05dcd",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 249,
+      "reconstructed_text_length": 249,
+      "character_difference": 0,
+      "fidelity_ratio": 1.0,
+      "fidelity_pass": true
+    },
+    "raw_answer": "8",
+    "normalized_answer": "8",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  },
+  {
+    "question_id": "68ecbacb2ec87a18deba1ad7",
+    "qid": null,
+    "question_type": "scq",
+    "sub_category": "scq_complete_4_options",
+    "subject": "Botany",
+    "chapter": "The Living World",
+    "detected_option_markers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "marker_types": [
+      "text_node"
+    ],
+    "extracted_options": [
+      {
+        "key": "A",
+        "text": "Closure of voltage-gated K+ channels.",
+        "html_length": 37,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "B",
+        "text": "Inactivation of voltage-gated Na+ channels.",
+        "html_length": 43,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "C",
+        "text": "Increased permeability to Cl− ions.",
+        "html_length": 35,
+        "is_blank": false,
+        "has_mathml": false
+      },
+      {
+        "key": "D",
+        "text": "Continuous activation of the Na+/K+ pump.",
+        "html_length": 41,
+        "is_blank": false,
+        "has_mathml": false
+      }
+    ],
+    "stem_extraction_status": "success",
+    "stem_text_preview": "The absolute refractory period during an action potential generation is primarily caused by:",
+    "solution_text_preview": "The absolute refractory period is the short interval immediately following the generation of an action potential during ",
+    "has_mathml_in_question": false,
+    "has_mathml_in_solution": false,
+    "raw_question_hash_before": "b3b922802f1ed12e9e3dd074e9d6d07f5677daba3db648dd140f78c2b5d7605a",
+    "raw_question_hash_after": "b3b922802f1ed12e9e3dd074e9d6d07f5677daba3db648dd140f78c2b5d7605a",
+    "raw_solution_hash_before": "08585dfdd254d875f229d913402239cec67f0ade87125688953a37d7b3f34032",
+    "raw_solution_hash_after": "08585dfdd254d875f229d913402239cec67f0ade87125688953a37d7b3f34032",
+    "raw_source_unchanged": true,
+    "extraction_fidelity": {
+      "raw_text_length": 274,
+      "reconstructed_text_length": 268,
+      "character_difference": 6,
+      "fidelity_ratio": 0.9781,
+      "fidelity_pass": true
+    },
+    "raw_answer": "B",
+    "normalized_answer": "B",
+    "answer_anomalies": [],
+    "parser_warnings": [],
+    "detected_content_loss": false
+  }
+]

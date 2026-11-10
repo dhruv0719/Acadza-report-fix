@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-11-10T14:09:21.648540+00:00",
+  "total_questions_processed": 43,
+  "total_reports_processed": 44,
+  "distinct_question_groups": 39,
+  "total_findings": 10,
+  "questions_with_findings_count": 10,
+  "questions_clean_count": 33,
+  "multi_report_groups_count": 4,
+  "findings_by_check_id": {
+    "BLANK_OPTION": 1,
+    "DUPLICATE_OPTIONS": 1,
+    "EXISTING_ERROR_HISTORY": 1,
+    "INVALID_METADATA": 1,
+    "MALFORMED_ANSWER": 2,
+    "MISSING_FIGURE_ASSET": 1,
+    "MISSING_OPTIONS": 1,
+    "RAW_MARKUP_LEAK": 1,
+    "SUSPICIOUS_OR_MISSING_UNIT": 1
+  },
+  "findings_by_severity": {
+    "critical": 1,
+    "high": 5,
+    "info": 1,
+    "low": 1,
+    "medium": 2
+  },
+  "findings_requiring_investigation": 10,
+  "questions_with_findings_ids": [
+    "5fc60508028950133eac8963",
+    "617fa18efd53ff1629ed890f",
+    "6208e80a9cb2ab67dac61bd0",
+    "622df25ab70e4b50e44ff837",
+    "622f08d7b70e4b50e4500a1b",
+    "63765a28f1d8416ae0408d89",
+    "68c8153cfb6b2f16e2d3ceaf",
+    "68e872546e45ba37dcc16bc0",
+    "68f21caf941cda588bc04365",
+    "6956d79788d7701e5617bc29"
+  ]
+}

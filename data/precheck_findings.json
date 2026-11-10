@@ -1,0 +1,148 @@
+[
+  {
+    "question_id": "68e872546e45ba37dcc16bc0",
+    "check_id": "BLANK_OPTION",
+    "severity": "high",
+    "evidence": "Option (C) has blank/empty content (HTML: '')",
+    "source_field": "options.C",
+    "requires_investigation": true,
+    "details": {
+      "blank_key": "C",
+      "raw_html": ""
+    }
+  },
+  {
+    "question_id": "6208e80a9cb2ab67dac61bd0",
+    "check_id": "EXISTING_ERROR_HISTORY",
+    "severity": "info",
+    "evidence": "Question has 1 prior revision(s). Latest by faculty at 2026-11-07T10:42:00Z (Spelling mistake): \"'mere' -> 'more' in options A-C; 'shurbs' -> 'shrubs'\"",
+    "source_field": "errorHistory",
+    "requires_investigation": true,
+    "details": {
+      "revisions_count": 1,
+      "latest_actor": "faculty",
+      "latest_timestamp": "2026-11-07T10:42:00Z",
+      "latest_type": "Spelling mistake",
+      "latest_note": "'mere' -> 'more' in options A-C; 'shurbs' -> 'shrubs'"
+    }
+  },
+  {
+    "question_id": "6956d79788d7701e5617bc29",
+    "check_id": "DUPLICATE_OPTIONS",
+    "severity": "high",
+    "evidence": "Options (B) and (C) have identical content: '0 W'",
+    "source_field": "options",
+    "requires_investigation": true,
+    "details": {
+      "keys": [
+        "B",
+        "C"
+      ],
+      "identical_text": "0 W"
+    }
+  },
+  {
+    "question_id": "622df25ab70e4b50e44ff837",
+    "check_id": "MISSING_FIGURE_ASSET",
+    "severity": "critical",
+    "evidence": "Question stem references figure/diagram ('as shown'), but quesImages is empty and no <img> tag exists in question HTML",
+    "source_field": "quesImages",
+    "requires_investigation": true,
+    "details": {
+      "matched_phrase": "as shown",
+      "ques_images": []
+    }
+  },
+  {
+    "question_id": "617fa18efd53ff1629ed890f",
+    "check_id": "INVALID_METADATA",
+    "severity": "low",
+    "evidence": "Exam attribution tag '(NEET 2019)' leaked into question stem instead of structured metadata",
+    "source_field": "stem_text",
+    "requires_investigation": true,
+    "details": {
+      "leaked_tag": "(NEET 2019)"
+    }
+  },
+  {
+    "question_id": "5fc60508028950133eac8963",
+    "check_id": "SUSPICIOUS_OR_MISSING_UNIT",
+    "severity": "medium",
+    "evidence": "Integer question asks for dimensional quantity 'frictional force' without specifying the target unit (e.g. '(in N)') or requesting a dimensionless ratio",
+    "source_field": "stem_text",
+    "requires_investigation": true,
+    "details": {
+      "dimensional_quantity": "frictional force",
+      "stem_ending": "The friction between wall and body is 0.3. Then the frictional force is equal to"
+    }
+  },
+  {
+    "question_id": "68f21caf941cda588bc04365",
+    "check_id": "MALFORMED_ANSWER",
+    "severity": "high",
+    "evidence": "Malformed answer structure detected: 'empty_string_in_answer_list'. Raw answer value: ['', 'B']",
+    "source_field": "answer",
+    "requires_investigation": true,
+    "details": {
+      "anomaly": "empty_string_in_answer_list",
+      "raw_answer": [
+        "",
+        "B"
+      ],
+      "normalized_answer": [
+        "B"
+      ]
+    }
+  },
+  {
+    "question_id": "622f08d7b70e4b50e4500a1b",
+    "check_id": "MISSING_OPTIONS",
+    "severity": "high",
+    "evidence": "Question type 'scq' has 3 options (['A', 'B', 'C']). Missing option(s): D",
+    "source_field": "options",
+    "requires_investigation": true,
+    "details": {
+      "missing_keys": [
+        "D"
+      ],
+      "actual_keys": [
+        "A",
+        "B",
+        "C"
+      ]
+    }
+  },
+  {
+    "question_id": "63765a28f1d8416ae0408d89",
+    "check_id": "RAW_MARKUP_LEAK",
+    "severity": "medium",
+    "evidence": "Raw LaTeX markup command(s) ['\\\\frac'] leaked in question HTML outside MathML tags",
+    "source_field": "question",
+    "requires_investigation": true,
+    "details": {
+      "field": "question",
+      "commands": [
+        "\\frac"
+      ]
+    }
+  },
+  {
+    "question_id": "68c8153cfb6b2f16e2d3ceaf",
+    "check_id": "MALFORMED_ANSWER",
+    "severity": "high",
+    "evidence": "Malformed answer structure detected: 'comma_separated_string_in_list'. Raw answer value: ['A, B, D']",
+    "source_field": "answer",
+    "requires_investigation": true,
+    "details": {
+      "anomaly": "comma_separated_string_in_list",
+      "raw_answer": [
+        "A, B, D"
+      ],
+      "normalized_answer": [
+        "A",
+        "B",
+        "D"
+      ]
+    }
+  }
+]

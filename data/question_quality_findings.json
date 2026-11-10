@@ -1,0 +1,51 @@
+[
+  {
+    "field": "answer",
+    "issue_type": "wrong_answer_key",
+    "description": "Solution derives 50 V (Option A), but answer key is stored as C (130 V).",
+    "severity": "critical",
+    "independent_of_reports": false
+  },
+  {
+    "field": "solution",
+    "issue_type": "wrong_solution_content",
+    "description": "Stored solution calculates 5.47 Angstrom for an unrelated problem before stating 16.8 eV.",
+    "severity": "high",
+    "independent_of_reports": false
+  },
+  {
+    "field": "solution",
+    "issue_type": "solution_typo",
+    "description": "Solution derivation 800 = 2*a^2 yields a = 20 cm, but solution concluding line states a = 40 cm while answer key correctly stores 20.",
+    "severity": "high",
+    "independent_of_reports": false
+  },
+  {
+    "field": "solution",
+    "issue_type": "solution_factual_error",
+    "description": "Solution incorrectly asserts that insulin and glucagon work synergistically, whereas they are antagonistic in blood glucose regulation.",
+    "severity": "medium",
+    "independent_of_reports": true
+  },
+  {
+    "field": "answer",
+    "issue_type": "wrong_answer_key",
+    "description": "Solution correctly establishes total flux q/(2 eps0) giving n=1, but key says 2.",
+    "severity": "critical",
+    "independent_of_reports": false
+  },
+  {
+    "field": "answer",
+    "issue_type": "wrong_answer_key",
+    "description": "Solution calculates 4800 N/m^2 (Option D), but answer key is stored as A (4556 N/m^2).",
+    "severity": "critical",
+    "independent_of_reports": false
+  },
+  {
+    "field": "question",
+    "issue_type": "unsound_question",
+    "description": "Question and solution contain conflicting physical formulas for wave interference; solution states assertion is both true and false in consecutive sentences.",
+    "severity": "critical",
+    "independent_of_reports": false
+  }
+]

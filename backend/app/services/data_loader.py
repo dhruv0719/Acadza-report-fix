@@ -1,7 +1,7 @@
 import json
 from collections import defaultdict
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Any, Dict, List, Optional
 
 from app.core.config import settings
 from app.models.question import NormalizedQuestion
@@ -74,4 +74,81 @@ def get_questions_map(
 ) -> Dict[str, NormalizedQuestion]:
     questions = load_normalized_questions(questions_path, reports_path)
     return {q.id: q for q in questions}
+
+
+def load_results(path: Optional[Path] = None) -> List[Dict]:
+    file_path = path or settings.RESULTS_PATH
+    if not file_path.exists():
+        return []
+    with open(file_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_quality_findings(path: Optional[Path] = None) -> List[Dict]:
+    file_path = path or settings.QUALITY_FINDINGS_PATH
+    if not file_path.exists():
+        return []
+    with open(file_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_unreported_audit(path: Optional[Path] = None) -> List[Dict]:
+    file_path = path or settings.UNREPORTED_AUDIT_PATH
+    if not file_path.exists():
+        return []
+    with open(file_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_telemetry(path: Optional[Path] = None) -> List[Dict]:
+    file_path = path or settings.TELEMETRY_LOG_PATH
+    if not file_path.exists():
+        return []
+    with open(file_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_checkpoints(path: Optional[Path] = None) -> Dict[str, Any]:
+    file_path = path or settings.CHECKPOINTS_PATH
+    if not file_path.exists():
+        return {}
+    with open(file_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_precheck_findings(path: Optional[Path] = None) -> Dict[str, Any]:
+    file_path = path or settings.PRECHECK_FINDINGS_PATH
+    if not file_path.exists():
+        return {}
+    with open(file_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_precheck_summary(path: Optional[Path] = None) -> Dict[str, Any]:
+    file_path = path or settings.PRECHECK_SUMMARY_PATH
+    if not file_path.exists():
+        return {}
+    with open(file_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_faculty_reviews(path: Optional[Path] = None) -> Dict[str, Any]:
+    file_path = path or settings.FACULTY_REVIEWS_PATH
+    if not file_path.exists():
+        return {}
+    with open(file_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def save_faculty_review(
+    report_id: str,
+    review_data: Dict[str, Any],
+    path: Optional[Path] = None,
+) -> Dict[str, Any]:
+    file_path = path or settings.FACULTY_REVIEWS_PATH
+    reviews = load_faculty_reviews(file_path)
+    reviews[report_id] = review_data
+    with open(file_path, "w", encoding="utf-8") as f:
+        json.dump(reviews, f, indent=2)
+    return reviews
 

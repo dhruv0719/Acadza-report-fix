@@ -71,20 +71,37 @@ def calculate_final_route(
             errors.append(f"Answer key change requires verification_status 'passed', but got '{assessment.verification_status}'.")
             return "faculty_review", errors
 
-        # Validate answer value shape
-        val = assessment.edit.replace
+        # Requirement 1: Explicit old-value/new-value validation
+        # Reject missing find values for existing textual answers and verify current value before mutation
+        current_answer = question.raw_answer
+        find_val = assessment.edit.find
+        replace_val = assessment.edit.replace
+
+        if find_val is None or str(find_val).strip() == "":
+            errors.append("Answer key edit requires an explicit 'find' value matching current stored answer (cannot be null/blank).")
+            return "faculty_review", errors
+
+        # Validate that find matches the current stored answer
+        norm_current = str(current_answer).strip().upper() if not isinstance(current_answer, list) else sorted([str(x).strip().upper() for x in current_answer])
+        norm_find = str(find_val).strip().upper() if not isinstance(find_val, list) else sorted([str(x).strip().upper() for x in find_val])
+
+        if norm_current != norm_find:
+            errors.append(f"Answer key mutation mismatch: 'find' value '{find_val}' does not match current stored answer '{current_answer}'.")
+            return "faculty_review", errors
+
+        # Validate answer replacement value shape
         if question.question_type == "scq":
-            if not isinstance(val, str) or val.strip().upper() not in ("A", "B", "C", "D"):
-                errors.append(f"Invalid SCQ replacement answer '{val}'. Must be single key A, B, C, or D.")
+            if not isinstance(replace_val, str) or replace_val.strip().upper() not in ("A", "B", "C", "D"):
+                errors.append(f"Invalid SCQ replacement answer '{replace_val}'. Must be single key A, B, C, or D.")
                 return "faculty_review", errors
         elif question.question_type == "mcq":
-            if not isinstance(val, list) or not all(isinstance(x, str) and x.strip().upper() in ("A", "B", "C", "D") for x in val):
-                errors.append(f"Invalid MCQ replacement answer '{val}'. Must be list of valid keys.")
+            if not isinstance(replace_val, list) or not all(isinstance(x, str) and x.strip().upper() in ("A", "B", "C", "D") for x in replace_val):
+                errors.append(f"Invalid MCQ replacement answer '{replace_val}'. Must be list of valid keys.")
                 return "faculty_review", errors
         elif question.question_type == "integerQuestion":
-            val_str = str(val).strip()
+            val_str = str(replace_val).strip()
             if not val_str.lstrip("-").isdigit():
-                errors.append(f"Invalid integer replacement answer '{val}'. Must be integer.")
+                errors.append(f"Invalid integer replacement answer '{replace_val}'. Must be integer.")
                 return "faculty_review", errors
 
     # 8. Never auto-apply invented options

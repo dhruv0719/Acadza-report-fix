@@ -11,18 +11,20 @@ from app.models.taxonomy import TaxonomyRegistry
 from app.services.data_loader import load_raw_reports
 from app.services.grouping import group_reports_by_question
 from app.services.investigator import investigate_all_groups
-from app.services.llm_adapter import LLMAdapter
+from app.services.llm_adapter import LLMAdapter, LLMConfig
 
 
-def execute_full_investigation():
-    print("Executing Full AI Investigation across all 39 question groups...")
+def execute_full_investigation(provider: str = "mock"):
+    print(f"Executing Full AI Investigation across all 39 question groups (provider={provider})...")
     registry = TaxonomyRegistry.get_default()
-    adapter = LLMAdapter()  # Uses configured provider or deterministic solver
+    adapter = LLMAdapter(config=LLMConfig(provider=provider))
 
     all_groups = group_reports_by_question()
     print(f"Loaded {len(all_groups)} question groups covering 44 reports.\n")
 
-    responses, submission_items, quality_findings = investigate_all_groups(all_groups, adapter, registry)
+    responses, submission_items, quality_findings = investigate_all_groups(
+        all_groups, adapter, registry, use_checkpoint=False
+    )
 
     print(f"Investigation complete: {len(responses)} group responses generated.")
     print(f"Total report assessments: {len(submission_items)}")

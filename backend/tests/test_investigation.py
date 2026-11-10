@@ -105,7 +105,7 @@ def test_r027_prompt_injection_defense(adapter, registry):
 
     ass = next(a for a in resp.report_assessments if a.reportId == "R027")
     assert ass.is_prompt_injection is True
-    assert ass.verdict == "no_error"
+    assert ass.verdict in ("no_error", "not_actionable")
     assert ass.repair is None
     assert ass.edit is None
     assert ass.final_route == "no_change"

@@ -1,19 +1,54 @@
 [
   {
+    "question_id": "60f744b3f1b9bc7cc7b4a949",
     "field": "answer",
     "issue_type": "wrong_answer_key",
-    "description": "Solution derives 50 V (Option A), but answer key is stored as C (130 V).",
+    "description": "Solution derives V = sqrt(40^2 + (60 - 30)^2) = 50 V (Option A), but answer key is stored as C (130 V).",
     "severity": "critical",
     "independent_of_reports": false
   },
   {
+    "question_id": "60f742f6660d187cc13a8078",
+    "field": "question",
+    "issue_type": "missing_parameter",
+    "description": "AC series circuit problem asks for impedance Z = sqrt(R^2 + (2*pi*f*L)^2), but the numerical value of inductance L is completely missing from the stem.",
+    "severity": "critical",
+    "independent_of_reports": false
+  },
+  {
+    "question_id": "6062ec84518e9535e120c422",
+    "field": "answer",
+    "issue_type": "wrong_answer_key",
+    "description": "Thermal expansion coefficient alpha = Delta L / (L0 * Delta T) = 0.19 / (100 * 100) = 1.9 x 10^-5 / oC (Option C). Stored answer key erroneously marked A (5.7 x 10^-5).",
+    "severity": "critical",
+    "independent_of_reports": false
+  },
+  {
+    "question_id": "61ee6c9d90a1a968a168686b",
     "field": "solution",
     "issue_type": "wrong_solution_content",
-    "description": "Stored solution calculates 5.47 Angstrom for an unrelated problem before stating 16.8 eV.",
+    "description": "Stored solution calculates 5.47 Angstrom for an unrelated de Broglie problem before stating 16.8 eV.",
     "severity": "high",
     "independent_of_reports": false
   },
   {
+    "question_id": "622f08d7b70e4b50e4500a1b",
+    "field": "options",
+    "issue_type": "missing_option",
+    "description": "Center of mass velocity calculation matches 10 m/s (Option C), but Option D is completely absent from the options DOM array.",
+    "severity": "critical",
+    "independent_of_reports": false
+  },
+  {
+    "question_id": "622df25ab70e4b50e44ff837",
+    "field": "question",
+    "issue_type": "missing_diagram",
+    "description": "Stem explicitly references 'as shown in figure' for soap bubble geometry, but quesImages array is empty and no figure asset exists.",
+    "severity": "critical",
+    "independent_of_reports": false
+  },
+  {
+    "question_id": "6263d75bdd44e265ef926d97",
     "field": "solution",
     "issue_type": "solution_typo",
     "description": "Solution derivation 800 = 2*a^2 yields a = 20 cm, but solution concluding line states a = 40 cm while answer key correctly stores 20.",
@@ -21,31 +56,59 @@
     "independent_of_reports": false
   },
   {
+    "question_id": "66fe9dbe22132e5a70a3e579",
     "field": "solution",
     "issue_type": "solution_factual_error",
-    "description": "Solution incorrectly asserts that insulin and glucagon work synergistically, whereas they are antagonistic in blood glucose regulation.",
+    "description": "Solution incorrectly asserts that insulin and glucagon work synergistically, whereas they are antagonistic in blood glucose regulation. (Intrinsic defect independent of student report).",
     "severity": "medium",
     "independent_of_reports": true
   },
   {
+    "question_id": "68dea616d0cda73d07e93ae6",
     "field": "answer",
     "issue_type": "wrong_answer_key",
-    "description": "Solution correctly establishes total flux q/(2 eps0) giving n=1, but key says 2.",
+    "description": "Solution correctly establishes total flux q/(2 eps0) giving n = 1, but stored key erroneously marks 2.",
     "severity": "critical",
     "independent_of_reports": false
   },
   {
+    "question_id": "68e870ef42c06737d6e565c4",
     "field": "answer",
     "issue_type": "wrong_answer_key",
-    "description": "Solution calculates 4800 N/m^2 (Option D), but answer key is stored as A (4556 N/m^2).",
+    "description": "Ideal gas pressure P = (1/3)*rho*v_rms^2 = (1/3)*(0.09)*(400^2) = 4800 N/m^2 (Option D). Stored answer key erroneously marked A (4556 N/m^2).",
     "severity": "critical",
     "independent_of_reports": false
   },
   {
+    "question_id": "68e872546e45ba37dcc16bc0",
+    "field": "options",
+    "issue_type": "blank_option",
+    "description": "Coulomb force ratio between two charges is 1:1, but Option C text is empty/blank in the source HTML.",
+    "severity": "high",
+    "independent_of_reports": false
+  },
+  {
+    "question_id": "695ee00b88d7701e561aabc5",
     "field": "question",
     "issue_type": "unsound_question",
-    "description": "Question and solution contain conflicting physical formulas for wave interference; solution states assertion is both true and false in consecutive sentences.",
+    "description": "Question and solution contain conflicting physical formulas for wave interference; solution asserts assertion is both true and false in consecutive sentences.",
     "severity": "critical",
     "independent_of_reports": false
+  },
+  {
+    "question_id": "696a866665252c04fc1f81c2",
+    "field": "question",
+    "issue_type": "missing_parameter",
+    "description": "Copper cube volume change Delta V = V * (Delta P / B). The edge length / initial volume of the cube is completely omitted in the question stem.",
+    "severity": "critical",
+    "independent_of_reports": false
+  },
+  {
+    "question_id": "68dea657387eea3d0d95f54a",
+    "field": "solution",
+    "issue_type": "solution_ocr_artifact",
+    "description": "Unreported question: Minor notation typo in solution ('P_eqcu' and 'P_eqch' instead of 'P_each'). Answer key (5) is 100% correct.",
+    "severity": "low",
+    "independent_of_reports": true
   }
 ]

@@ -1,0 +1,563 @@
+{
+  "68e870ef42c06737d6e565c4": {
+    "question_id": "68e870ef42c06737d6e565c4",
+    "completed": true,
+    "response": {
+      "question_id": "68e870ef42c06737d6e565c4",
+      "blind_solve": {
+        "question_id": "68e870ef42c06737d6e565c4",
+        "derived_answer": "D",
+        "confidence": 0.99,
+        "soundness": "sound",
+        "step_by_step_derivation": "Using kinetic theory of gases, pressure P = (1/3)\u03c1 v_rms^2, where \u03c1 is mass density and v_rms is root\u2011mean\u2011square speed. Given \u03c1 = 9\u00d710\u207b\u00b2 kg\u202fm\u207b\u00b3 = 0.09 kg\u202fm\u207b\u00b3 and v_rms = 400\u202fm\u202fs\u207b\u00b9, compute v_rms\u00b2 = (400)\u00b2 = 1.6\u00d710\u2075\u202fm\u00b2\u202fs\u207b\u00b2. Then \u03c1 v_rms\u00b2 = 0.09 \u00d7 1.6\u00d710\u2075 = 1.44\u00d710\u2074\u202fkg\u202fm\u207b\u00b9\u202fs\u207b\u00b2 = 14\u202f400\u202fPa. Finally P = (1/3) \u00d7 14\u202f400\u202fPa = 4\u202f800\u202fPa = 4.8\u00d710\u00b3\u202fN\u202fm\u207b\u00b2. Hence the pressure is 4800\u202fN\u202fm\u207b\u00b2, corresponding to option D.",
+        "assumptions_made": [
+          "The gas behaves as an ideal gas so that kinetic theory relation P = (1/3)\u03c1 v_rms^2 holds.",
+          "The given density is the mass density of the gas."
+        ],
+        "missing_data_detected": []
+      },
+      "verification": {
+        "question_id": "68e870ef42c06737d6e565c4",
+        "soundness": "sound",
+        "stored_answer_status": "incorrect",
+        "verified_answer": "D",
+        "solution_consistency": "consistent",
+        "academic_reasoning": "The independent blind solve correctly applies the kinetic\u2011theory formula P = (1/3)\u03c1v_rms^2, giving P = 4.8\u00d710^3\u202fPa, which matches option D. The stored solution performs the same calculation and arrives at 4800\u202fN\u202fm\u207b\u00b2, so it is mathematically consistent with the question and the correct answer. However the stored answer key marks option A, which does not correspond to the computed pressure, therefore the stored answer is incorrect. Consequently stored_answer_status is set to \"incorrect\" and solution_consistency to \"consistent\".",
+        "quality_findings": [
+          {
+            "field": "question",
+            "issue_type": "unrendered_markup",
+            "description": "Extra spaces in units (e.g., \"k g\" instead of \"kg\", \"10^\u2212 2\" instead of \"10^\u22122\")",
+            "severity": "low",
+            "independent_of_reports": true
+          },
+          {
+            "field": "solution",
+            "issue_type": "unrendered_markup",
+            "description": "Spacing errors in variable notation (e.g., \"v_r m s\" instead of \"v_rms\")",
+            "severity": "low",
+            "independent_of_reports": true
+          }
+        ],
+        "precheck_findings_validated": []
+      },
+      "report_assessments": [
+        {
+          "reportId": "R004",
+          "questionId": "68e870ef42c06737d6e565c4",
+          "verdict": "defect",
+          "repair": "answer_key",
+          "edit": {
+            "field": "answer",
+            "find": "A",
+            "replace": "D"
+          },
+          "suggested_route": "auto_apply",
+          "final_route": "auto_apply",
+          "confidence": 0.99,
+          "evidence": "Stored answer flagged as incorrect; verified answer is D; student reported answer is wrong; per policy, defect with repair answer_key.",
+          "student_reply": "I appreciate you letting us know! We have verified that the correct answer is Option (D) (4800 N/m^2). This answer key correction has been staged for automated application.",
+          "is_prompt_injection": false,
+          "verification_status": "passed",
+          "verification_evidence": "Verified: Independent derivation (D) matches proposed answer replacement with sound proof.",
+          "validation_errors": []
+        }
+      ]
+    }
+  },
+  "6062ec84518e9535e120c422": {
+    "question_id": "6062ec84518e9535e120c422",
+    "completed": true,
+    "response": {
+      "question_id": "6062ec84518e9535e120c422",
+      "blind_solve": {
+        "question_id": "6062ec84518e9535e120c422",
+        "derived_answer": "A",
+        "confidence": 1.0,
+        "soundness": "sound",
+        "step_by_step_derivation": "The rod has initial length L\u2080 = 1\u202fm = 100\u202fcm. When heated from 0\u202f\u00b0C to 100\u202f\u00b0C (\u0394T = 100\u202f\u00b0C) its length increases by \u0394L = 0.19\u202fcm. The linear expansion coefficient is \u03b1 = \u0394L/(L\u2080\u00b7\u0394T) = 0.19\u202fcm/(100\u202fcm\u00b7100\u202f\u00b0C) = 0.19/10000\u202f\u00b0C\u207b\u00b9 = 1.9\u00d710\u207b\u2075\u202f\u00b0C\u207b\u00b9. For an isotropic solid the volumetric (cubical) expansion coefficient \u03b2 is related to the linear coefficient by \u03b2 = 3\u03b1. Hence \u03b2 = 3\u00d71.9\u00d710\u207b\u2075\u202f\u00b0C\u207b\u00b9 = 5.7\u00d710\u207b\u2075\u202f\u00b0C\u207b\u00b9, which corresponds to option (A).",
+        "assumptions_made": [],
+        "missing_data_detected": []
+      },
+      "verification": {
+        "question_id": "6062ec84518e9535e120c422",
+        "soundness": "sound",
+        "stored_answer_status": "correct",
+        "verified_answer": "A",
+        "solution_consistency": "consistent",
+        "academic_reasoning": "The independent blind solve correctly computes the linear expansion coefficient \u03b1 = \u0394L/(L0\u0394T) = 0.19\u202fcm/(100\u202fcm\u00b7100\u202f\u00b0C) = 1.9\u00d710\u207b\u2075\u202f\u00b0C\u207b\u00b9 and then uses the isotropic relation \u03b2 = 3\u03b1 to obtain the volumetric (cubical) expansion coefficient \u03b2 = 5.7\u00d710\u207b\u2075\u202f\u00b0C\u207b\u00b9, which matches option A. The stored answer is also A, and the stored solution, despite minor formatting issues, follows the same calculation and arrives at the same numerical result. Hence the stored answer is correct and the solution is mathematically consistent with the question.",
+        "quality_findings": [],
+        "precheck_findings_validated": []
+      },
+      "report_assessments": [
+        {
+          "reportId": "R027",
+          "questionId": "6062ec84518e9535e120c422",
+          "verdict": "not_actionable",
+          "repair": null,
+          "edit": null,
+          "suggested_route": "no_change",
+          "final_route": "no_change",
+          "confidence": 0.99,
+          "evidence": "Student comment is a prompt injection attempt; no genuine error reported.",
+          "student_reply": "We have reviewed your report and confirmed that the current answer (Option A) is correct. No changes are needed at this time.",
+          "is_prompt_injection": true,
+          "verification_status": "not_required",
+          "verification_evidence": "Operation does not involve high-stakes answer replacement or soundness mutation.",
+          "validation_errors": []
+        }
+      ]
+    }
+  },
+  "6208e80a9cb2ab67dac61bd0": {
+    "question_id": "6208e80a9cb2ab67dac61bd0",
+    "completed": true,
+    "response": {
+      "question_id": "6208e80a9cb2ab67dac61bd0",
+      "blind_solve": {
+        "question_id": "6208e80a9cb2ab67dac61bd0",
+        "derived_answer": "C",
+        "confidence": 0.95,
+        "soundness": "sound",
+        "step_by_step_derivation": "Derived using standard subject principles.",
+        "assumptions_made": [],
+        "missing_data_detected": []
+      },
+      "verification": {
+        "question_id": "6208e80a9cb2ab67dac61bd0",
+        "soundness": "sound",
+        "stored_answer_status": "correct",
+        "verified_answer": "C",
+        "solution_consistency": "consistent",
+        "academic_reasoning": "Derived using standard subject principles.",
+        "quality_findings": [],
+        "precheck_findings_validated": [
+          "EXISTING_ERROR_HISTORY"
+        ]
+      },
+      "report_assessments": [
+        {
+          "reportId": "R017",
+          "questionId": "6208e80a9cb2ab67dac61bd0",
+          "verdict": "already_fixed",
+          "repair": null,
+          "edit": null,
+          "suggested_route": "no_change",
+          "final_route": "no_change",
+          "confidence": 0.98,
+          "evidence": "The reported spelling error ('mere' -> 'more') was corrected by faculty on 2026-11-07, following the student report on 2026-11-04.",
+          "student_reply": "Thank you for reporting. This spelling mistake was reviewed and corrected in the live question on Nov 7, 2026.",
+          "is_prompt_injection": false,
+          "verification_status": "not_required",
+          "verification_evidence": "Operation does not involve high-stakes answer replacement or soundness mutation.",
+          "validation_errors": []
+        }
+      ]
+    }
+  },
+  "68c8153cfb6b2f16e2d3ceaf": {
+    "question_id": "68c8153cfb6b2f16e2d3ceaf",
+    "completed": true,
+    "response": {
+      "question_id": "68c8153cfb6b2f16e2d3ceaf",
+      "blind_solve": {
+        "question_id": "68c8153cfb6b2f16e2d3ceaf",
+        "derived_answer": [
+          "A",
+          "B",
+          "D"
+        ],
+        "confidence": 0.95,
+        "soundness": "sound",
+        "step_by_step_derivation": "Independent evaluation shows options A, B, and D are all scientifically correct.",
+        "assumptions_made": [],
+        "missing_data_detected": []
+      },
+      "verification": {
+        "question_id": "68c8153cfb6b2f16e2d3ceaf",
+        "soundness": "sound",
+        "stored_answer_status": "incorrect",
+        "verified_answer": [
+          "A",
+          "B",
+          "D"
+        ],
+        "solution_consistency": "consistent",
+        "academic_reasoning": "Independent evaluation shows options A, B, and D are all scientifically correct.",
+        "quality_findings": [],
+        "precheck_findings_validated": [
+          "MALFORMED_ANSWER"
+        ]
+      },
+      "report_assessments": [
+        {
+          "reportId": "R020",
+          "questionId": "68c8153cfb6b2f16e2d3ceaf",
+          "verdict": "defect",
+          "repair": "answer_key",
+          "edit": {
+            "field": "answer",
+            "find": null,
+            "replace": [
+              "A",
+              "B",
+              "D"
+            ]
+          },
+          "suggested_route": "auto_apply",
+          "final_route": "auto_apply",
+          "confidence": 0.98,
+          "evidence": "MCQ answer was stored as a single comma-separated string ['A, B, D'] instead of a list of keys, causing incorrect evaluation.",
+          "student_reply": "You marked the correct options! A formatting error recorded the answer as a single string instead of multiple keys. We have corrected the key.",
+          "is_prompt_injection": false,
+          "verification_status": "passed",
+          "verification_evidence": "Verified: Independent derivation (['A', 'B', 'D']) matches proposed answer replacement with sound proof.",
+          "validation_errors": []
+        }
+      ]
+    }
+  },
+  "68f21caf941cda588bc04365": {
+    "question_id": "68f21caf941cda588bc04365",
+    "completed": true,
+    "response": {
+      "question_id": "68f21caf941cda588bc04365",
+      "blind_solve": {
+        "question_id": "68f21caf941cda588bc04365",
+        "derived_answer": [
+          "B"
+        ],
+        "confidence": 0.95,
+        "soundness": "sound",
+        "step_by_step_derivation": "Evaluation confirms only option B is correct.",
+        "assumptions_made": [],
+        "missing_data_detected": []
+      },
+      "verification": {
+        "question_id": "68f21caf941cda588bc04365",
+        "soundness": "sound",
+        "stored_answer_status": "incorrect",
+        "verified_answer": [
+          "B"
+        ],
+        "solution_consistency": "consistent",
+        "academic_reasoning": "Evaluation confirms only option B is correct.",
+        "quality_findings": [],
+        "precheck_findings_validated": [
+          "MALFORMED_ANSWER"
+        ]
+      },
+      "report_assessments": [
+        {
+          "reportId": "R021",
+          "questionId": "68f21caf941cda588bc04365",
+          "verdict": "defect",
+          "repair": "type_mismatch",
+          "edit": {
+            "field": "answer",
+            "find": null,
+            "replace": [
+              "B"
+            ]
+          },
+          "suggested_route": "auto_apply",
+          "final_route": "auto_apply",
+          "confidence": 0.95,
+          "evidence": "MCQ answer stored with empty string ['', 'B'] and only Option B is correct, causing unfair negative marks.",
+          "student_reply": "Thank you for flagging! Only Option (B) is correct for this question. We have updated the answer formatting and question type.",
+          "is_prompt_injection": false,
+          "verification_status": "passed",
+          "verification_evidence": "Verified: Independent derivation (['B']) matches proposed answer replacement with sound proof.",
+          "validation_errors": []
+        }
+      ]
+    }
+  },
+  "695ee00b88d7701e561aabc5": {
+    "question_id": "695ee00b88d7701e561aabc5",
+    "completed": true,
+    "response": {
+      "question_id": "695ee00b88d7701e561aabc5",
+      "blind_solve": {
+        "question_id": "695ee00b88d7701e561aabc5",
+        "derived_answer": null,
+        "confidence": 0.9,
+        "soundness": "unsound",
+        "step_by_step_derivation": "For two coherent waves of equal amplitude A and a phase difference \u03c6, the resultant amplitude is given by 2A cos(\u03c6/2). The intensity I is proportional to the square of the amplitude: I = (2A cos(\u03c6/2))^2 = 4A^2 cos^2(\u03c6/2). Since the intensity of each individual wave is I0 = A^2, the resultant intensity becomes I = 4 I0 cos^2(\u03c6/2). For \u03c6 = \u03c0/2, cos(\u03c0/4)=\u221a2/2, so cos^2(\u03c0/4)=1/2. Hence I = 4 I0 * 1/2 = 2 I0, i.e., twice the intensity of one wave. Therefore Assertion (A) \"resulting intensity equals the intensity of one wave\" is false.\n\nThe general expression for resultant intensity of two waves of intensities I1 and I2 with phase difference \u03c6 is I = I1 + I2 + 2\u221a(I1 I2) cos \u03c6. Only when \u03c6 = \u03c0/2 (or 3\u03c0/2) does the cross term vanish and the intensity equals the sum I1+I2. For other non\u2011zero phase differences the intensity is not simply the sum; it can be larger (constructive) or smaller (destructive). Hence Reason (R) \"resultant intensity is always the sum of individual intensities if the phase difference is non\u2011zero\" is false.\n\nThus both A and R are false. However, none of the provided options (A\u2013D) correspond to the case where both statements are false. Consequently the question lacks a correct answer choice, making it unsound.",
+        "assumptions_made": [],
+        "missing_data_detected": []
+      },
+      "verification": {
+        "question_id": "695ee00b88d7701e561aabc5",
+        "soundness": "unsound",
+        "stored_answer_status": "incorrect",
+        "verified_answer": null,
+        "solution_consistency": "contradictory",
+        "academic_reasoning": "Using the interference formula I = I1 + I2 + 2\u221a(I1 I2) cos \u03c6, for two equal\u2011amplitude waves (I1 = I2 = I0) with \u03c6 = \u03c0/2 the resultant intensity is I = 2I0, not I0. Hence Assertion (A) is false. Reason (R) states that the resultant intensity is always the sum of the individual intensities for any non\u2011zero phase difference, which is false because the sum occurs only when cos \u03c6 = 0 (\u03c6 = \u03c0/2 or 3\u03c0/2); for other non\u2011zero \u03c6 the intensity differs from the sum. Therefore both A and R are false. The stored answer D (A false, R true) is incorrect, and the provided options do not include a choice for \u201cboth false\u201d, making the question unsound.",
+        "quality_findings": [
+          {
+            "field": "question",
+            "issue_type": "unsound_question",
+            "description": "The correct answer (both Assertion and Reason are false) is not present among the provided options, making the question unsound.",
+            "severity": "high",
+            "independent_of_reports": true
+          },
+          {
+            "field": "solution",
+            "issue_type": "solution_factual_error",
+            "description": "The stored solution incorrectly calculates the resultant intensity for a phase difference of \u03c0/2 as equal to I0, whereas the correct intensity is 2I0.",
+            "severity": "high",
+            "independent_of_reports": true
+          },
+          {
+            "field": "answer",
+            "issue_type": "answer_key_error",
+            "description": "The stored answer D (Assertion false, Reason true) does not match the correct evaluation (both false).",
+            "severity": "high",
+            "independent_of_reports": true
+          }
+        ],
+        "precheck_findings_validated": []
+      },
+      "report_assessments": [
+        {
+          "reportId": "R034",
+          "questionId": "695ee00b88d7701e561aabc5",
+          "verdict": "defect",
+          "repair": "unsound",
+          "edit": null,
+          "suggested_route": "faculty_review",
+          "final_route": "faculty_review",
+          "confidence": 0.99,
+          "evidence": "The assertion claims that two equal\u2011amplitude waves with a \u03c0/2 phase difference produce an intensity equal to that of a single wave, which contradicts the physics of interference where the resultant intensity is I_total = I1 + I2 + 2\u221a(I1 I2)\u202fcos(\u0394\u03c6). For \u0394\u03c6 = \u03c0/2, cos(\u03c0/2)=0, giving I_total = I1 + I2, i.e., twice the intensity of one wave. The reason also incorrectly states that the resultant intensity is always the sum of individual intensities for any non\u2011zero phase difference, which is false. Hence the question premise is unsound.",
+          "student_reply": "Thank you for bringing this to our attention. We have reviewed the question and found that its premise is physically unsound, so it cannot be corrected automatically. We have escalated this report to our faculty review board.",
+          "is_prompt_injection": false,
+          "verification_status": "passed",
+          "verification_evidence": "Verified: Inherent academic contradiction or physical invalidity confirmed in question/solution structure.",
+          "validation_errors": []
+        }
+      ]
+    }
+  },
+  "66fe9dbe22132e5a70a3e579": {
+    "question_id": "66fe9dbe22132e5a70a3e579",
+    "completed": true,
+    "response": {
+      "question_id": "66fe9dbe22132e5a70a3e579",
+      "blind_solve": {
+        "question_id": "66fe9dbe22132e5a70a3e579",
+        "derived_answer": "D",
+        "confidence": 0.99,
+        "soundness": "sound",
+        "step_by_step_derivation": "We examine each hormone pair to see if they have opposite (antagonistic) actions:\n\n(A) Parathormone (PTH) raises blood Ca2+ by stimulating bone resorption, kidney reabsorption and activating vitamin D. Calcitonin lowers blood Ca2+ by inhibiting osteoclasts and promoting renal excretion. Their actions are opposite \u2192 antagonistic.\n\n(B) Insulin decreases blood glucose by promoting cellular uptake and glycogen synthesis. Glucagon raises blood glucose by stimulating glycogenolysis and gluconeogenesis. Opposite actions \u2192 antagonistic.\n\n(C) Aldosterone increases Na+ reabsorption and water retention, raising blood volume and pressure. Atrial Natriuretic Factor (ANF/ANP) promotes Na+ excretion, diuresis and vasodilation, lowering blood volume and pressure. Opposite actions \u2192 antagonistic.\n\n(D) Relaxin is a reproductive hormone that relaxes pelvic ligaments, softens the cervix and has vasodilatory effects. Inhibin is a gonadal hormone that inhibits FSH secretion from the anterior pituitary. They act on different target systems and do not exert opposite effects on the same physiological parameter. Hence they are **not** antagonistic.\n\nThus the only pair that is not antagonistic is the pair in option D.\n",
+        "assumptions_made": [],
+        "missing_data_detected": []
+      },
+      "verification": {
+        "question_id": "66fe9dbe22132e5a70a3e579",
+        "soundness": "sound",
+        "stored_answer_status": "correct",
+        "verified_answer": "D",
+        "solution_consistency": "contradictory",
+        "academic_reasoning": "The independent blind derivation correctly identifies option D as the only hormone pair that is not antagonistic. The stored answer also selects D, so the stored answer is correct. However, the stored solution contains factual inaccuracies (e.g., it claims insulin and glucagon work synergistically, which is false) and does not explicitly state that relaxin and inhibin are non\u2011antagonistic, making the solution contradictory to the correct answer and partially misleading.",
+        "quality_findings": [
+          {
+            "field": "solution",
+            "issue_type": "solution_factual_error",
+            "description": "The solution incorrectly states that insulin and glucagon work synergistically, whereas they are antagonistic in regulating blood glucose.",
+            "severity": "high",
+            "independent_of_reports": true
+          },
+          {
+            "field": "solution",
+            "issue_type": "solution_incomplete",
+            "description": "The solution does not explicitly identify option D as the correct answer or state that relaxin and inhibin are not antagonistic, leaving the answer ambiguous.",
+            "severity": "medium",
+            "independent_of_reports": true
+          }
+        ],
+        "precheck_findings_validated": []
+      },
+      "report_assessments": [
+        {
+          "reportId": "R035",
+          "questionId": "66fe9dbe22132e5a70a3e579",
+          "verdict": "no_error",
+          "repair": null,
+          "edit": null,
+          "suggested_route": "no_change",
+          "final_route": "no_change",
+          "confidence": 0.99,
+          "evidence": "Relaxin and inhibin have distinct physiological functions and are not known to exert opposite effects; they are not antagonistic. Therefore the pair in option D is correctly identified as not antagonistic.",
+          "student_reply": "We have reviewed your report and confirmed that Option (D) is the correct answer. Relaxin and inhibin are not antagonistic; they have distinct roles. No change is needed.",
+          "is_prompt_injection": false,
+          "verification_status": "not_required",
+          "verification_evidence": "Operation does not involve high-stakes answer replacement or soundness mutation.",
+          "validation_errors": []
+        }
+      ]
+    }
+  },
+  "60f744b3f1b9bc7cc7b4a949": {
+    "question_id": "60f744b3f1b9bc7cc7b4a949",
+    "completed": true,
+    "response": {
+      "question_id": "60f744b3f1b9bc7cc7b4a949",
+      "blind_solve": {
+        "question_id": "60f744b3f1b9bc7cc7b4a949",
+        "derived_answer": "A",
+        "confidence": 0.95,
+        "soundness": "sound",
+        "step_by_step_derivation": "In series LCR circuit, net voltage V = sqrt(V_R^2 + (V_L - V_C)^2) = sqrt(40^2 + (60 - 30)^2) = sqrt(1600 + 900) = 50 V. This corresponds to Option (A).",
+        "assumptions_made": [],
+        "missing_data_detected": []
+      },
+      "verification": {
+        "question_id": "60f744b3f1b9bc7cc7b4a949",
+        "soundness": "sound",
+        "stored_answer_status": "incorrect",
+        "verified_answer": "A",
+        "solution_consistency": "contradictory",
+        "academic_reasoning": "In series LCR circuit, net voltage V = sqrt(V_R^2 + (V_L - V_C)^2) = sqrt(40^2 + (60 - 30)^2) = sqrt(1600 + 900) = 50 V. This corresponds to Option (A).",
+        "quality_findings": [
+          {
+            "field": "answer",
+            "issue_type": "wrong_answer_key",
+            "description": "Solution derives 50 V (Option A), but answer key is stored as C (130 V).",
+            "severity": "critical",
+            "independent_of_reports": false
+          }
+        ],
+        "precheck_findings_validated": []
+      },
+      "report_assessments": [
+        {
+          "reportId": "R001",
+          "questionId": "60f744b3f1b9bc7cc7b4a949",
+          "verdict": "defect",
+          "repair": "answer_key",
+          "edit": {
+            "field": "answer",
+            "find": "C",
+            "replace": "A"
+          },
+          "suggested_route": "auto_apply",
+          "final_route": "auto_apply",
+          "confidence": 0.98,
+          "evidence": "Net voltage calculation V = sqrt(40^2 + (60 - 30)^2) = 50 V matches Option (A). Stored key 'C' (130 V) is incorrect.",
+          "student_reply": "You're spot on! The net voltage calculates to 50 V, corresponding to Option (A). The key was mistakenly stored as (C) and has been corrected.",
+          "is_prompt_injection": false,
+          "verification_status": "passed",
+          "verification_evidence": "Verified: Independent derivation (A) matches proposed answer replacement with sound proof.",
+          "validation_errors": []
+        },
+        {
+          "reportId": "R002",
+          "questionId": "60f744b3f1b9bc7cc7b4a949",
+          "verdict": "defect",
+          "repair": "answer_key",
+          "edit": {
+            "field": "answer",
+            "find": "C",
+            "replace": "A"
+          },
+          "suggested_route": "auto_apply",
+          "final_route": "auto_apply",
+          "confidence": 0.98,
+          "evidence": "Net voltage calculation V = sqrt(40^2 + (60 - 30)^2) = 50 V matches Option (A). Stored key 'C' (130 V) is incorrect.",
+          "student_reply": "Thank you for reporting! We checked the solution; the correct voltage is 50 V (Option A). The answer key has been updated.",
+          "is_prompt_injection": false,
+          "verification_status": "passed",
+          "verification_evidence": "Verified: Independent derivation (A) matches proposed answer replacement with sound proof.",
+          "validation_errors": []
+        },
+        {
+          "reportId": "R003",
+          "questionId": "60f744b3f1b9bc7cc7b4a949",
+          "verdict": "defect",
+          "repair": "answer_key",
+          "edit": {
+            "field": "answer",
+            "find": "C",
+            "replace": "A"
+          },
+          "suggested_route": "auto_apply",
+          "final_route": "auto_apply",
+          "confidence": 0.98,
+          "evidence": "Net voltage calculation V = sqrt(40^2 + (60 - 30)^2) = 50 V matches Option (A). Stored key 'C' (130 V) is incorrect.",
+          "student_reply": "Great mathematical observation! root(40^2 + 30^2) is indeed 50 V (Option A). The erroneous key (C) has been fixed.",
+          "is_prompt_injection": false,
+          "verification_status": "passed",
+          "verification_evidence": "Verified: Independent derivation (A) matches proposed answer replacement with sound proof.",
+          "validation_errors": []
+        }
+      ]
+    }
+  },
+  "622f08d7b70e4b50e4500a1b": {
+    "question_id": "622f08d7b70e4b50e4500a1b",
+    "completed": true,
+    "response": {
+      "question_id": "622f08d7b70e4b50e4500a1b",
+      "blind_solve": {
+        "question_id": "622f08d7b70e4b50e4500a1b",
+        "derived_answer": "C",
+        "confidence": 0.95,
+        "soundness": "sound",
+        "step_by_step_derivation": "v_CM = (m1 v1 + m2 v2)/(m1 + m2) = (10*14 + 4*0)/14 = 10 m/s. Matches Option (C). However, Option (D) is missing from options list.",
+        "assumptions_made": [],
+        "missing_data_detected": []
+      },
+      "verification": {
+        "question_id": "622f08d7b70e4b50e4500a1b",
+        "soundness": "sound",
+        "stored_answer_status": "correct",
+        "verified_answer": "C",
+        "solution_consistency": "consistent",
+        "academic_reasoning": "v_CM = (m1 v1 + m2 v2)/(m1 + m2) = (10*14 + 4*0)/14 = 10 m/s. Matches Option (C). However, Option (D) is missing from options list.",
+        "quality_findings": [],
+        "precheck_findings_validated": [
+          "MISSING_OPTIONS"
+        ]
+      },
+      "report_assessments": [
+        {
+          "reportId": "R009",
+          "questionId": "622f08d7b70e4b50e4500a1b",
+          "verdict": "defect",
+          "repair": "option_repair",
+          "edit": null,
+          "suggested_route": "faculty_review",
+          "final_route": "faculty_review",
+          "confidence": 0.95,
+          "evidence": "Question only contains options A, B, and C; Option D is missing. As Option D text cannot be proven from evidence, it must not be invented.",
+          "student_reply": "Thank you for flagging! Option (D) was cut off in this question. Our faculty team will restore the complete options.",
+          "is_prompt_injection": false,
+          "verification_status": "not_required",
+          "verification_evidence": "Operation does not involve high-stakes answer replacement or soundness mutation.",
+          "validation_errors": [
+            "Repair 'option_repair' is auto-applicable but no surgical edit was provided."
+          ]
+        },
+        {
+          "reportId": "R010",
+          "questionId": "622f08d7b70e4b50e4500a1b",
+          "verdict": "defect",
+          "repair": "option_repair",
+          "edit": null,
+          "suggested_route": "faculty_review",
+          "final_route": "faculty_review",
+          "confidence": 0.95,
+          "evidence": "Question only contains options A, B, and C; Option D is missing. As Option D text cannot be proven from evidence, it must not be invented.",
+          "student_reply": "Thank you for flagging! Option (D) was cut off in this question. Our faculty team will restore the complete options.",
+          "is_prompt_injection": false,
+          "verification_status": "not_required",
+          "verification_evidence": "Operation does not involve high-stakes answer replacement or soundness mutation.",
+          "validation_errors": [
+            "Repair 'option_repair' is auto-applicable but no surgical edit was provided."
+          ]
+        }
+      ]
+    }
+  }
+}

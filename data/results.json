@@ -57,7 +57,7 @@
     "route": "auto_apply",
     "confidence": 0.98,
     "evidence": "Pressure P = (1/3)*rho*v_rms^2 = 4800 N/m^2 (Option D). Key stored 'A' is wrong; student suggested 8225 (Option B) which is also wrong.",
-    "student_reply": "You're right that the answer key was incorrect. Using P = (1/3)ρv_rms², the correct pressure is 4800 N/m² (Option D) rather than 8225. We have corrected the key to (D)."
+    "student_reply": "You're right that the answer key was incorrect. Using P = (1/3)\u03c1v_rms\u00b2, the correct pressure is 4800 N/m\u00b2 (Option D) rather than 8225. This correction to Option (D) has been staged for automated application."
   },
   {
     "reportId": "R005",
@@ -72,7 +72,7 @@
     "route": "auto_apply",
     "confidence": 0.98,
     "evidence": "Total flux equals q/(2 eps0) which yields n = 1. Stored answer '2' is an error.",
-    "student_reply": "Excellent work! Adding the flux contributions gives total flux q/(2ε₀), which means n = 1. The answer key has been updated to 1."
+    "student_reply": "Excellent work! Adding the flux contributions gives total flux q/(2\u03b5\u2080), which means n = 1. The answer key has been updated to 1."
   },
   {
     "reportId": "R006",
@@ -303,12 +303,12 @@
     "repair": "spelling",
     "edit": {
       "field": "question",
-      "find": "pelxus",
+      "find": "plexux",
       "replace": "plexus"
     },
-    "route": "faculty_review",
+    "route": "auto_apply",
     "confidence": 0.95,
-    "evidence": "Typographical error in spelling of 'plexus'.",
+    "evidence": "Typographical error in spelling of 'plexus' ('Choroid plexux' in Option D).",
     "student_reply": "Thank you for reporting! We have corrected the spelling of 'plexus' in the question."
   },
   {
@@ -412,7 +412,7 @@
     "route": "no_change",
     "confidence": 0.95,
     "evidence": "Time of alignment t = 4 s using (1/2)*alpha_rel*t^2 = 2*pi. Student forgot 1/2 factor.",
-    "student_reply": "We double-checked the kinematics; using θ = (1/2)α_rel·t² = 2π gives t = 4 seconds. The stored answer 4 is correct!"
+    "student_reply": "We double-checked the kinematics; using \u03b8 = (1/2)\u03b1_rel\u00b7t\u00b2 = 2\u03c0 gives t = 4 seconds. The stored answer 4 is correct!"
   },
   {
     "reportId": "R032",
@@ -544,7 +544,7 @@
     "route": "no_change",
     "confidence": 0.95,
     "evidence": "Surface charge density ratio sigma_big/sigma_small = (64/16) = 4 : 1 (Option B). Student inverted the ratio.",
-    "student_reply": "While the big drop has 16 times the surface area, it holds 64 times the charge! Thus σ_big/σ_small = 64/16 = 4 : 1. Option (B) is correct."
+    "student_reply": "While the big drop has 16 times the surface area, it holds 64 times the charge! Thus \u03c3_big/\u03c3_small = 64/16 = 4 : 1. Option (B) is correct."
   },
   {
     "reportId": "R044",

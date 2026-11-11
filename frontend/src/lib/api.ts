@@ -12,17 +12,80 @@ import {
   UnreportedQuestionAudit,
 } from "@/types";
 
-const DEFAULT_API_BASE = "http://127.0.0.1:8000/api";
+/**
+ * Normalizes an API base URL so that it always ends with `/api` exactly once.
+ * Handles:
+ * - "https://acadza-report-fix.onrender.com/api"  -> "https://acadza-report-fix.onrender.com/api"
+ * - "https://acadza-report-fix.onrender.com"      -> "https://acadza-report-fix.onrender.com/api"
+ * - "https://acadza-report-fix.onrender.com/"     -> "https://acadza-report-fix.onrender.com/api"
+ * - "https://acadza-report-fix.onrender.com/api/" -> "https://acadza-report-fix.onrender.com/api"
+ * - "http://127.0.0.1:8000"                      -> "http://127.0.0.1:8000/api"
+ * - "http://127.0.0.1:8000/api"                  -> "http://127.0.0.1:8000/api"
+ * - "/api"                                       -> "/api"
+ */
+export function normalizeApiBase(rawUrl?: string): string {
+  const url = (rawUrl || "").trim().replace(/\/+$/, "");
 
-function getApiBase(): string {
-  const url = process.env.NEXT_PUBLIC_API_URL || DEFAULT_API_BASE;
-  return url.replace(/\/+$/, "");
+  if (!url) {
+    // In browser or local dev, fallback to local backend if on localhost
+    if (typeof window !== "undefined") {
+      const isLocal =
+        window.location.hostname === "localhost" ||
+        window.location.hostname === "127.0.0.1";
+      if (isLocal) {
+        return "http://127.0.0.1:8000/api";
+      }
+      return "https://acadza-report-fix.onrender.com/api";
+    }
+    return process.env.NODE_ENV === "production"
+      ? "https://acadza-report-fix.onrender.com/api"
+      : "http://127.0.0.1:8000/api";
+  }
+
+  // If already ends with /api, return as is
+  if (url.endsWith("/api")) {
+    return url;
+  }
+
+  // Otherwise append /api exactly once
+  return `${url}/api`;
 }
 
-function buildUrl(endpoint: string, params?: Record<string, string | boolean | number | undefined>): string {
-  const base = getApiBase();
-  const cleanEndpoint = endpoint.startsWith("/") ? endpoint : `/${endpoint}`;
-  const fullPath = `${base}${cleanEndpoint}`;
+/**
+ * Returns the active API base URL.
+ * Prioritizes NEXT_PUBLIC_API_URL environment variable.
+ */
+export function getApiBase(customBase?: string): string {
+  if (customBase) {
+    return normalizeApiBase(customBase);
+  }
+  const envUrl = process.env.NEXT_PUBLIC_API_URL;
+  return normalizeApiBase(envUrl);
+}
+
+/**
+ * Constructs a fully qualified or relative API endpoint URL.
+ * Guarantees:
+ * 1. Base URL has `/api` prefix exactly once.
+ * 2. Endpoint does not duplicate `/api` if passed with or without it.
+ * 3. Correct query parameter serialization.
+ */
+export function buildUrl(
+  endpoint: string,
+  params?: Record<string, string | boolean | number | undefined>,
+  customBase?: string
+): string {
+  const base = getApiBase(customBase);
+
+  // Normalize endpoint: strip leading slash and redundant "api/" prefix if caller provided it
+  let clean = endpoint.startsWith("/") ? endpoint.slice(1) : endpoint;
+  if (clean.startsWith("api/")) {
+    clean = clean.slice(4);
+  } else if (clean === "api") {
+    clean = "";
+  }
+
+  const fullPath = clean ? `${base}/${clean}` : base;
 
   if (!params) return fullPath;
 
@@ -37,7 +100,7 @@ function buildUrl(endpoint: string, params?: Record<string, string | boolean | n
   return query ? `${fullPath}?${query}` : fullPath;
 }
 
-async function handleResponse<T>(res: Response, context: string): Promise<T> {
+async function handleResponse<T>(res: Response, endpointUrl: string, method: string = "GET"): Promise<T> {
   if (!res.ok) {
     let errorDetail = "";
     try {
@@ -47,13 +110,13 @@ async function handleResponse<T>(res: Response, context: string): Promise<T> {
       errorDetail = await res.text().catch(() => "");
     }
     throw new Error(
-      `[API Error] ${context} failed (${res.status} ${res.statusText}): ${errorDetail || "Unknown error"}`
+      `[API Error ${res.status}] ${method} ${endpointUrl}: ${errorDetail || res.statusText || "Request failed"}`
     );
   }
   return res.json() as Promise<T>;
 }
 
-export async function fetchHealth(): Promise<{
+export async function fetchHealth(baseUrl?: string): Promise<{
   status: string;
   questions_count: number;
   reports_count: number;
@@ -61,112 +124,123 @@ export async function fetchHealth(): Promise<{
   verdicts_count: number;
   repairs_count: number;
 }> {
-  const url = buildUrl("/health");
+  const url = buildUrl("/health", undefined, baseUrl);
   const res = await fetch(url, { cache: "no-store" });
-  return handleResponse(res, "GET /health");
+  return handleResponse(res, url, "GET");
 }
 
-export async function fetchTaxonomy(): Promise<TaxonomyData> {
-  const url = buildUrl("/taxonomy");
+export async function fetchTaxonomy(baseUrl?: string): Promise<TaxonomyData> {
+  const url = buildUrl("/taxonomy", undefined, baseUrl);
   const res = await fetch(url, { cache: "no-store" });
-  return handleResponse(res, "GET /taxonomy");
+  return handleResponse(res, url, "GET");
 }
 
-export async function fetchQuestions(params?: {
-  question_type?: string;
-  reported_only?: boolean;
-}): Promise<NormalizedQuestion[]> {
-  const url = buildUrl("/questions", params);
+export async function fetchQuestions(
+  params?: {
+    question_type?: string;
+    reported_only?: boolean;
+  },
+  baseUrl?: string
+): Promise<NormalizedQuestion[]> {
+  const url = buildUrl("/questions", params, baseUrl);
   const res = await fetch(url, { cache: "no-store" });
-  return handleResponse(res, "GET /questions");
+  return handleResponse(res, url, "GET");
 }
 
-export async function fetchQuestion(id: string): Promise<NormalizedQuestion> {
-  const url = buildUrl(`/questions/${id}`);
+export async function fetchQuestion(id: string, baseUrl?: string): Promise<NormalizedQuestion> {
+  const url = buildUrl(`/questions/${id}`, undefined, baseUrl);
   const res = await fetch(url, { cache: "no-store" });
-  return handleResponse(res, `GET /questions/${id}`);
+  return handleResponse(res, url, "GET");
 }
 
-export async function fetchReports(params?: {
-  question_id?: string;
-  source?: string;
-}): Promise<ReportRecord[]> {
-  const url = buildUrl("/reports", params);
+export async function fetchReports(
+  params?: {
+    question_id?: string;
+    source?: string;
+  },
+  baseUrl?: string
+): Promise<ReportRecord[]> {
+  const url = buildUrl("/reports", params, baseUrl);
   const res = await fetch(url, { cache: "no-store" });
-  return handleResponse(res, "GET /reports");
+  return handleResponse(res, url, "GET");
 }
 
-export async function fetchReport(reportId: string): Promise<ReportRecord> {
-  const url = buildUrl(`/reports/${reportId}`);
+export async function fetchReport(reportId: string, baseUrl?: string): Promise<ReportRecord> {
+  const url = buildUrl(`/reports/${reportId}`, undefined, baseUrl);
   const res = await fetch(url, { cache: "no-store" });
-  return handleResponse(res, `GET /reports/${reportId}`);
+  return handleResponse(res, url, "GET");
 }
 
-export async function fetchGroupedReports(): Promise<Record<string, ReportGroup>> {
-  const url = buildUrl("/reports/grouped");
+export async function fetchGroupedReports(baseUrl?: string): Promise<Record<string, ReportGroup>> {
+  const url = buildUrl("/reports/grouped", undefined, baseUrl);
   const res = await fetch(url, { cache: "no-store" });
-  return handleResponse(res, "GET /reports/grouped");
+  return handleResponse(res, url, "GET");
 }
 
-export async function fetchResults(params?: {
-  route?: string;
-  verdict?: string;
-  question_id?: string;
-}): Promise<ResultItem[]> {
-  const url = buildUrl("/results", params);
+export async function fetchResults(
+  params?: {
+    route?: string;
+    verdict?: string;
+    question_id?: string;
+  },
+  baseUrl?: string
+): Promise<ResultItem[]> {
+  const url = buildUrl("/results", params, baseUrl);
   const res = await fetch(url, { cache: "no-store" });
-  return handleResponse(res, "GET /results");
+  return handleResponse(res, url, "GET");
 }
 
-export async function fetchResult(reportId: string): Promise<ResultItem> {
-  const url = buildUrl(`/results/${reportId}`);
+export async function fetchResult(reportId: string, baseUrl?: string): Promise<ResultItem> {
+  const url = buildUrl(`/results/${reportId}`, undefined, baseUrl);
   const res = await fetch(url, { cache: "no-store" });
-  return handleResponse(res, `GET /results/${reportId}`);
+  return handleResponse(res, url, "GET");
 }
 
-export async function fetchQualityFindings(): Promise<QualityFinding[]> {
-  const url = buildUrl("/quality-findings");
+export async function fetchQualityFindings(baseUrl?: string): Promise<QualityFinding[]> {
+  const url = buildUrl("/quality-findings", undefined, baseUrl);
   const res = await fetch(url, { cache: "no-store" });
-  return handleResponse(res, "GET /quality-findings");
+  return handleResponse(res, url, "GET");
 }
 
-export async function fetchUnreportedAudit(): Promise<UnreportedQuestionAudit[]> {
-  const url = buildUrl("/unreported-audit");
+export async function fetchUnreportedAudit(baseUrl?: string): Promise<UnreportedQuestionAudit[]> {
+  const url = buildUrl("/unreported-audit", undefined, baseUrl);
   const res = await fetch(url, { cache: "no-store" });
-  return handleResponse(res, "GET /unreported-audit");
+  return handleResponse(res, url, "GET");
 }
 
-export async function fetchTelemetry(): Promise<TelemetryData> {
-  const url = buildUrl("/telemetry");
+export async function fetchTelemetry(baseUrl?: string): Promise<TelemetryData> {
+  const url = buildUrl("/telemetry", undefined, baseUrl);
   const res = await fetch(url, { cache: "no-store" });
-  return handleResponse(res, "GET /telemetry");
+  return handleResponse(res, url, "GET");
 }
 
-export async function fetchCheckpoints(): Promise<Record<string, InvestigationCheckpoint>> {
-  const url = buildUrl("/checkpoints");
+export async function fetchCheckpoints(baseUrl?: string): Promise<Record<string, InvestigationCheckpoint>> {
+  const url = buildUrl("/checkpoints", undefined, baseUrl);
   const res = await fetch(url, { cache: "no-store" });
-  return handleResponse(res, "GET /checkpoints");
+  return handleResponse(res, url, "GET");
 }
 
 export async function fetchQuestionCheckpoint(
-  questionId: string
+  questionId: string,
+  baseUrl?: string
 ): Promise<InvestigationCheckpoint> {
-  const url = buildUrl(`/checkpoints/${questionId}`);
+  const url = buildUrl(`/checkpoints/${questionId}`, undefined, baseUrl);
   const res = await fetch(url, { cache: "no-store" });
-  return handleResponse(res, `GET /checkpoints/${questionId}`);
+  return handleResponse(res, url, "GET");
 }
 
-export async function fetchFacultyReviews(): Promise<Record<string, FacultyReviewRecord>> {
-  const url = buildUrl("/faculty-reviews");
+export async function fetchFacultyReviews(baseUrl?: string): Promise<Record<string, FacultyReviewRecord>> {
+  const url = buildUrl("/faculty-reviews", undefined, baseUrl);
   const res = await fetch(url, { cache: "no-store" });
-  return handleResponse(res, "GET /faculty-reviews");
+  return handleResponse(res, url, "GET");
 }
 
 export async function submitFacultyReview(
   reportId: string,
-  review: FacultyReviewRequest
+  review: FacultyReviewRequest,
+  baseUrl?: string
 ): Promise<FacultyReviewRecord> {
-  const url = buildUrl(`/review/${reportId}`);
+  const url = buildUrl(`/review/${reportId}`, undefined, baseUrl);
   const res = await fetch(url, {
     method: "POST",
     headers: {
@@ -176,5 +250,5 @@ export async function submitFacultyReview(
     body: JSON.stringify(review),
     cache: "no-store",
   });
-  return handleResponse(res, `POST /review/${reportId}`);
+  return handleResponse(res, url, "POST");
 }

@@ -112,16 +112,56 @@ def test_telemetry_endpoint():
 
 
 def test_faculty_review_flow():
-    req = FacultyReviewRequest(
+    from app.models.result import ProposedEdit
+
+    # 1. Test approve
+    req_approve = FacultyReviewRequest(
         action="approve",
         reviewer_notes="Verified wave interference assertion independently.",
         reviewer_name="Dr. Sharma",
     )
-    res = submit_faculty_review("R034", req)
-    assert res.report_id == "R034"
-    assert res.status == "approved"
-    assert res.reviewer_name == "Dr. Sharma"
+    res_approve = submit_faculty_review("R034", req_approve)
+    assert res_approve.report_id == "R034"
+    assert res_approve.status == "approved_staged"
+    assert res_approve.reviewer_name == "Dr. Sharma"
+    assert res_approve.reviewed_at is not None
 
-    reviews = get_all_faculty_reviews()
-    assert "R034" in reviews
-    assert reviews["R034"]["action"] == "approve"
+    reviews_after_approve = get_all_faculty_reviews()
+    assert "R034" in reviews_after_approve
+    assert reviews_after_approve["R034"]["action"] == "approve"
+    assert reviews_after_approve["R034"]["status"] == "approved_staged"
+
+    # 2. Test reject
+    req_reject = FacultyReviewRequest(
+        action="reject",
+        reviewer_notes="Student suggestion is mathematically incorrect.",
+        reviewer_name="Prof. Verma",
+    )
+    res_reject = submit_faculty_review("R027", req_reject)
+    assert res_reject.report_id == "R027"
+    assert res_reject.status == "rejected"
+    assert res_reject.reviewer_name == "Prof. Verma"
+
+    reviews_after_reject = get_all_faculty_reviews()
+    assert "R027" in reviews_after_reject
+    assert reviews_after_reject["R027"]["action"] == "reject"
+
+    # 3. Test modify
+    req_modify = FacultyReviewRequest(
+        action="modify",
+        reviewer_notes="Adjusted surgical find string for precise DOM replacement.",
+        reviewer_name="Dr. Sharma",
+        modified_edit=ProposedEdit(field="answer", find="A", replace="D"),
+        custom_reply="Verified: correct answer key has been staged to Option D.",
+    )
+    res_modify = submit_faculty_review("R004", req_modify)
+    assert res_modify.report_id == "R004"
+    assert res_modify.status == "modified_staged"
+    assert res_modify.new_value == "D"
+    assert res_modify.previous_value == "D" or res_modify.previous_value == "A"
+    assert res_modify.custom_reply is not None
+
+    reviews_after_modify = get_all_faculty_reviews()
+    assert "R004" in reviews_after_modify
+    assert reviews_after_modify["R004"]["action"] == "modify"
+    assert len(reviews_after_modify["R004"]["history"]) >= 1

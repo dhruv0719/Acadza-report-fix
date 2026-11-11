@@ -1,10 +1,10 @@
 {
   "R034": {
-    "id": 7,
+    "id": 10,
     "report_id": "R034",
     "action": "approve",
     "reviewer_name": "Dr. Sharma",
-    "reviewed_at": "2026-11-11T09:29:28.471917+00:00",
+    "reviewed_at": "2026-11-11T09:49:47.792098+00:00",
     "reviewer_notes": "Verified wave interference assertion independently.",
     "previous_value": null,
     "new_value": null,
@@ -37,15 +37,28 @@
         "modified_edit": null,
         "custom_reply": null,
         "status": "approved_staged"
+      },
+      {
+        "id": 10,
+        "report_id": "R034",
+        "action": "approve",
+        "reviewer_name": "Dr. Sharma",
+        "reviewed_at": "2026-11-11T09:49:47.792098+00:00",
+        "reviewer_notes": "Verified wave interference assertion independently.",
+        "previous_value": null,
+        "new_value": null,
+        "modified_edit": null,
+        "custom_reply": null,
+        "status": "approved_staged"
       }
     ]
   },
   "R027": {
-    "id": 8,
+    "id": 11,
     "report_id": "R027",
     "action": "reject",
     "reviewer_name": "Prof. Verma",
-    "reviewed_at": "2026-11-11T09:29:28.484775+00:00",
+    "reviewed_at": "2026-11-11T09:49:47.804103+00:00",
     "reviewer_notes": "Student suggestion is mathematically incorrect.",
     "previous_value": "None",
     "new_value": null,
@@ -91,15 +104,28 @@
         "modified_edit": null,
         "custom_reply": null,
         "status": "rejected"
+      },
+      {
+        "id": 11,
+        "report_id": "R027",
+        "action": "reject",
+        "reviewer_name": "Prof. Verma",
+        "reviewed_at": "2026-11-11T09:49:47.804103+00:00",
+        "reviewer_notes": "Student suggestion is mathematically incorrect.",
+        "previous_value": "None",
+        "new_value": null,
+        "modified_edit": null,
+        "custom_reply": null,
+        "status": "rejected"
       }
     ]
   },
   "R004": {
-    "id": 9,
+    "id": 12,
     "report_id": "R004",
     "action": "modify",
     "reviewer_name": "Dr. Sharma",
-    "reviewed_at": "2026-11-11T09:29:28.501171+00:00",
+    "reviewed_at": "2026-11-11T09:49:47.812344+00:00",
     "reviewer_notes": "Adjusted surgical find string for precise DOM replacement.",
     "previous_value": "D",
     "new_value": "D",
@@ -164,6 +190,23 @@
         "action": "modify",
         "reviewer_name": "Dr. Sharma",
         "reviewed_at": "2026-11-11T09:29:28.501171+00:00",
+        "reviewer_notes": "Adjusted surgical find string for precise DOM replacement.",
+        "previous_value": "D",
+        "new_value": "D",
+        "modified_edit": {
+          "field": "answer",
+          "find": "A",
+          "replace": "D"
+        },
+        "custom_reply": "Verified: correct answer key has been staged to Option D.",
+        "status": "modified_staged"
+      },
+      {
+        "id": 12,
+        "report_id": "R004",
+        "action": "modify",
+        "reviewer_name": "Dr. Sharma",
+        "reviewed_at": "2026-11-11T09:49:47.812344+00:00",
         "reviewer_notes": "Adjusted surgical find string for precise DOM replacement.",
         "previous_value": "D",
         "new_value": "D",

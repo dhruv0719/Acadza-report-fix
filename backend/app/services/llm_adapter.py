@@ -24,7 +24,7 @@ class LLMConfig:
         fallback_model: Optional[str] = None,
         temperature: Optional[float] = None,
     ):
-        dotenv.load_dotenv()
+        dotenv.load_dotenv(override=True)
         # Provider selection: 'mock' | 'groq' | 'openai' | 'anthropic'
         self.provider = (provider or os.getenv("LLM_PROVIDER", "mock")).lower()
         self.model = model or os.getenv("LLM_MODEL", "openai/gpt-oss-120b")

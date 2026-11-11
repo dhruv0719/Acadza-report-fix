@@ -17,8 +17,8 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
+/lib/
+/lib64/
 parts/
 sdist/
 var/
@@ -41,6 +41,10 @@ dist/
 .npm
 *.tsbuildinfo
 next-env.d.ts
+
+# Ensure frontend/src/lib is never ignored
+!frontend/src/lib/
+!frontend/src/lib/**
 
 # IDE / OS
 .vscode/

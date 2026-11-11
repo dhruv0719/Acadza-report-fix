@@ -207,7 +207,10 @@ export interface FacultyReviewRecord {
   reviewer_name: string;
   reviewed_at: string;
   reviewer_notes?: string;
+  previous_value?: any;
+  new_value?: any;
   modified_edit?: ProposedEdit;
   custom_reply?: string;
-  status: "approved" | "rejected" | "modified";
+  status: string;
+  history?: FacultyReviewRecord[];
 }

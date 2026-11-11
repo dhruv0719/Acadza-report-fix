@@ -376,14 +376,18 @@ export default function TriageTable({
                       {review ? (
                         <span
                           className={`inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold ${
-                            review.status === "approved"
+                            review.status.includes("approved")
                               ? "bg-emerald-100 text-emerald-800 border border-emerald-300"
-                              : review.status === "rejected"
+                              : review.status.includes("rejected")
                               ? "bg-red-100 text-red-800 border border-red-300"
                               : "bg-blue-100 text-blue-800 border border-blue-300"
                           }`}
                         >
-                          {review.status.toUpperCase()}
+                          {review.status === "approved_staged"
+                            ? "APPROVED (STAGED)"
+                            : review.status === "modified_staged"
+                            ? "MODIFIED (STAGED)"
+                            : review.status.replace("_", " ").toUpperCase()}
                         </span>
                       ) : (
                         <span className="text-slate-400 text-[10px] italic">Pending</span>

@@ -439,7 +439,7 @@ export default function ReportDetailModal({
                 </div>
                 {facultyReview ? (
                   <span className="text-xs px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-medium border border-emerald-500/30">
-                    Status: {facultyReview.status.toUpperCase()}
+                    Status: {facultyReview.status === "approved_staged" ? "APPROVED (STAGED)" : facultyReview.status.replace("_", " ").toUpperCase()}
                   </span>
                 ) : (
                   <span className="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 font-medium border border-amber-500/30">
@@ -447,6 +447,42 @@ export default function ReportDetailModal({
                   </span>
                 )}
               </div>
+
+              {facultyReview && (
+                <div className="p-3 bg-slate-950/70 rounded-lg border border-slate-700 space-y-1.5 text-xs">
+                  <div className="flex items-center justify-between text-[11px] text-slate-400">
+                    <span>
+                      Reviewer: <strong className="text-slate-200">{facultyReview.reviewer_name}</strong>
+                    </span>
+                    <span>{new Date(facultyReview.reviewed_at).toLocaleTimeString()}</span>
+                  </div>
+                  {facultyReview.reviewer_notes && (
+                    <div className="text-[11px] text-slate-300 italic">
+                      "{facultyReview.reviewer_notes}"
+                    </div>
+                  )}
+                  <div className="grid grid-cols-2 gap-2 pt-1 text-[11px] font-mono">
+                    <div className="p-1.5 bg-slate-900 rounded border border-slate-800">
+                      <span className="text-[10px] text-slate-500 block uppercase">Previous Value</span>
+                      <span className="text-red-400 break-words">
+                        {String(facultyReview.previous_value ?? "N/A")}
+                      </span>
+                    </div>
+                    <div className="p-1.5 bg-slate-900 rounded border border-slate-800">
+                      <span className="text-[10px] text-slate-500 block uppercase">Staged Value</span>
+                      <span className="text-emerald-400 break-words">
+                        {String(facultyReview.new_value ?? "None")}
+                      </span>
+                    </div>
+                  </div>
+                  {facultyReview.history && facultyReview.history.length > 1 && (
+                    <div className="pt-1 text-[10px] text-slate-400">
+                      <span className="font-semibold text-slate-300">Audit Trail: </span>
+                      {facultyReview.history.length} persistent actions on this report
+                    </div>
+                  )}
+                </div>
+              )}
 
               {submitSuccess && (
                 <div className="p-2 bg-emerald-500/20 border border-emerald-500/40 rounded text-xs text-emerald-200">

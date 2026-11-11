@@ -40,6 +40,8 @@ class FacultyReviewResponse(BaseModel):
     reviewer_name: str
     reviewed_at: str
     reviewer_notes: Optional[str] = None
+    previous_value: Optional[Any] = None
+    new_value: Optional[Any] = None
     modified_edit: Optional[ProposedEdit] = None
     custom_reply: Optional[str] = None
     status: str
@@ -217,15 +219,36 @@ def submit_faculty_review(report_id: str, review: FacultyReviewRequest) -> Facul
         raise HTTPException(status_code=404, detail=f"Report {report_id} not found in results")
 
     now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
+    edit = matching_result.get("edit") or {}
+
+    if review.action == "approve":
+        status_val = "approved_staged"
+        prev_val = edit.get("find") if edit.get("find") is not None else edit.get("field")
+        new_val = edit.get("replace")
+    elif review.action == "reject":
+        status_val = "rejected"
+        prev_val = edit.get("replace") if edit.get("replace") is not None else "None"
+        new_val = None
+    elif review.action == "modify":
+        status_val = "modified_staged"
+        prev_val = edit.get("replace") if edit.get("replace") is not None else edit.get("find")
+        new_val = review.modified_edit.replace if review.modified_edit else None
+    else:
+        status_val = review.action
+        prev_val = None
+        new_val = None
+
     record = {
         "report_id": report_id,
         "action": review.action,
         "reviewer_name": review.reviewer_name or "Faculty Reviewer",
         "reviewed_at": now_iso,
         "reviewer_notes": review.reviewer_notes,
+        "previous_value": prev_val,
+        "new_value": new_val,
         "modified_edit": review.modified_edit.model_dump() if review.modified_edit else None,
         "custom_reply": review.custom_reply,
-        "status": "approved" if review.action == "approve" else ("rejected" if review.action == "reject" else "modified"),
+        "status": status_val,
     }
     save_faculty_review(report_id, record)
     return FacultyReviewResponse(**record)

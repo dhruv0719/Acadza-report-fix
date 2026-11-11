@@ -133,11 +133,15 @@ def load_precheck_summary(path: Optional[Path] = None) -> Dict[str, Any]:
 
 
 def load_faculty_reviews(path: Optional[Path] = None) -> Dict[str, Any]:
-    file_path = path or settings.FACULTY_REVIEWS_PATH
-    if not file_path.exists():
-        return {}
-    with open(file_path, "r", encoding="utf-8") as f:
-        return json.load(f)
+    from app.services.review_storage import get_all_reviews
+    try:
+        return get_all_reviews()
+    except Exception:
+        file_path = path or settings.FACULTY_REVIEWS_PATH
+        if not file_path.exists():
+            return {}
+        with open(file_path, "r", encoding="utf-8") as f:
+            return json.load(f)
 
 
 def save_faculty_review(
@@ -145,10 +149,28 @@ def save_faculty_review(
     review_data: Dict[str, Any],
     path: Optional[Path] = None,
 ) -> Dict[str, Any]:
-    file_path = path or settings.FACULTY_REVIEWS_PATH
-    reviews = load_faculty_reviews(file_path)
-    reviews[report_id] = review_data
-    with open(file_path, "w", encoding="utf-8") as f:
-        json.dump(reviews, f, indent=2)
-    return reviews
+    from app.services.review_storage import save_review_action
+    try:
+        save_review_action(
+            report_id=report_id,
+            action=review_data.get("action", "approve"),
+            reviewer_name=review_data.get("reviewer_name", "Faculty Reviewer"),
+            reviewer_notes=review_data.get("reviewer_notes"),
+            previous_value=review_data.get("previous_value"),
+            new_value=review_data.get("new_value"),
+            modified_edit=review_data.get("modified_edit"),
+            custom_reply=review_data.get("custom_reply"),
+            status=review_data.get("status"),
+        )
+        return load_faculty_reviews()
+    except Exception:
+        file_path = path or settings.FACULTY_REVIEWS_PATH
+        reviews = {}
+        if file_path.exists():
+            with open(file_path, "r", encoding="utf-8") as f:
+                reviews = json.load(f)
+        reviews[report_id] = review_data
+        with open(file_path, "w", encoding="utf-8") as f:
+            json.dump(reviews, f, indent=2)
+        return reviews
 

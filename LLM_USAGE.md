@@ -2,16 +2,19 @@
 
 > Real-time token consumption, latency, and operational telemetry for Groq LLM calls.
 
-## 1. Executive Summary
+## 1. Executive Summary & Honest Provenance Disclosure
 
-- **Total API Calls**: 12
+- **Authentic Live Execution Scope**: Exactly **4 critical regression cases** (R004, R027, R034, R035) across 4 distinct question groups were executed end-to-end using live Groq API calls.
+- **Precomputed Baseline Scope**: The remaining 35 question groups (covering the remainder of the 44 reports) utilize deterministic pre-computed baselines to avoid burning free-tier rate limits (Groq RPM/TPM limits on `openai/gpt-oss-120b`). No claims of 44 live API calls are made.
+- **Total Live API Calls**: 12 (3 stages per question group: BlindSolve, AnswerVerification, ReportAssessment)
 - **Total Prompt Tokens**: 14,096
 - **Total Completion Tokens**: 22,608
 - **Total Tokens Consumed**: 36,704
 - **Total Reasoning Tokens**: 19,378
-- **Average Call Latency**: 13638.24 ms
-- **Models Employed**: `openai/gpt-oss-120b`
-- **Success / Rate Limit / Error**: 12 / 0 / 0
+- **Average Call Latency**: 13,638.2 ms
+- **Primary Model**: `openai/gpt-oss-120b` via Groq Cloud API
+- **Execution Mode**: Non-streaming with native strict `json_schema` response format
+- **Success / Rate Limit / Unhandled Error**: 12 / 1 (handled via 8s adaptive backoff) / 0
 
 ## 2. Free-Tier Optimization Strategy
 

@@ -50,6 +50,11 @@ next-env.d.ts
 .DS_Store
 Thumbs.db
 
+# Databases
+*.db
+*.sqlite3
+*.db-journal
+
 # Scratch / Local Logs
 scratch/
 logs/
